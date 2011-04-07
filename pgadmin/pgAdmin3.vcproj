@@ -41,8 +41,6 @@
 			/>
 			<Tool
 				Name="png2c"
-				ConstKeyword="true"
-				ZeroTerminate="true"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -170,8 +168,8 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="2"
-				AdditionalIncludeDirectories="&quot;$(WXWIN)/include&quot;;&quot;$(WXWIN)/contrib/include&quot;;&quot;$(PGDIR)/include&quot;;&quot;$(PGBUILD)/libxml2/include/&quot;;&quot;$(PGBUILD)/libxslt/include/&quot;;&quot;$(PGBUILD)/iconv/include/&quot;;include/"
-				PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE=1;NDEBUG;WIN32;_WINDOWS;__WINDOWS__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;wxUSE_UNICODE=1;UNICODE;EMBED_XRC;SSL"
+				AdditionalIncludeDirectories="&quot;$(WXWIN)/lib/vc_dll/mswu/&quot;;&quot;$(WXWIN)/include&quot;;&quot;$(WXWIN)/contrib/include&quot;;&quot;$(PGDIR)/include&quot;;&quot;$(PGBUILD)/libxml2/include/&quot;;&quot;$(PGBUILD)/libxslt/include/&quot;;&quot;$(PGBUILD)/iconv/include/&quot;;include/"
+				PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE=1;NDEBUG;WIN32;_WINDOWS;__WINDOWS__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;__WXMSW__;WXUSINGDLL;wxUSE_UNICODE=1;UNICODE;EMBED_XRC;SSL;HAVE_CONNINFO_PARSE"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -200,11 +198,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="wxbase28u.lib wxbase28u_xml.lib wxbase28u_net.lib wxmsw28u_adv.lib wxmsw28u_core.lib wxmsw28u_html.lib wxmsw28u_aui.lib wxregexu.lib wxpng.lib wxzlib.lib wxjpeg.lib wxtiff.lib wxmsw28u_stc.lib wxmsw28u_ogl.lib wxmsw28u_xrc.lib wxexpat.lib libpq.lib libxml2.lib libxslt.lib iconv_a.lib comctl32.lib rpcrt4.lib wsock32.lib winmm.lib"
+				AdditionalDependencies="wxbase28u.lib wxbase28u_xml.lib wxbase28u_net.lib wxmsw28u_adv.lib wxmsw28u_core.lib wxmsw28u_html.lib wxmsw28u_aui.lib wxregexu.lib wxpng.lib wxzlib.lib wxjpeg.lib wxtiff.lib wxmsw28u_stc.lib wxmsw28u_xrc.lib wxexpat.lib libpq.lib libxml2.lib libxslt.lib iconv_a.lib comctl32.lib rpcrt4.lib wsock32.lib winmm.lib"
 				OutputFile=".\Release/pgAdmin3.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(WXWIN)/lib/vc_lib&quot;;&quot;$(PGDIR)/lib&quot;;&quot;$(PGBUILD)/libxml2/lib&quot;;&quot;$(PGBUILD)/libxslt/lib&quot;;&quot;$(PGBUILD)/iconv/lib&quot;"
+				AdditionalLibraryDirectories="&quot;$(WXWIN)/lib/vc_dll&quot;;&quot;$(PGDIR)/lib&quot;;&quot;$(PGBUILD)/libxml2/lib&quot;;&quot;$(PGBUILD)/libxslt/lib&quot;;&quot;$(PGBUILD)/iconv/lib&quot;"
 				IgnoreDefaultLibraryNames="libcd.lib,libcid.lib,msvcrtd.lib"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\Release/pgAdmin3.pdb"
@@ -259,8 +257,6 @@
 			/>
 			<Tool
 				Name="png2c"
-				ConstKeyword="true"
-				ZeroTerminate="true"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -390,8 +386,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(WXWIN)/include&quot;;&quot;$(WXWIN)/contrib/include&quot;;&quot;$(PGDIR)/include&quot;;&quot;$(PGBUILD)/libxml2/include/&quot;;&quot;$(PGBUILD)/libxslt/include/&quot;;&quot;$(PGBUILD)/iconv/include/&quot;;include/"
-				PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE=1;WIN32;_DEBUG;_WINDOWS;__WINDOWS__;__WXMSW__;DEBUG=1;__WXDEBUG__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;wxUSE_UNICODE=1;UNICODE;SSL"
+				AdditionalIncludeDirectories="&quot;$(WXWIN)/lib/vc_dll/mswud/&quot;;&quot;$(WXWIN)/include&quot;;&quot;$(WXWIN)/contrib/include&quot;;&quot;$(PGDIR)/include&quot;;&quot;$(PGBUILD)/libxml2/include/&quot;;&quot;$(PGBUILD)/libxslt/include/&quot;;&quot;$(PGBUILD)/iconv/include/&quot;;include/"
+				PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE=1;WIN32;_DEBUG;_WINDOWS;__WINDOWS__;__WXMSW__;WXUSINGDLL;DEBUG=1;__WXDEBUG__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;wxUSE_UNICODE=1;UNICODE;SSL;HAVE_CONNINFO_PARSE"
 				MinimalRebuild="true"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="2"
@@ -421,11 +417,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="wxbase28ud.lib wxbase28ud_xml.lib wxbase28ud_net.lib wxmsw28ud_adv.lib wxmsw28ud_core.lib wxmsw28ud_html.lib wxmsw28ud_aui.lib wxregexud.lib wxpngd.lib wxzlibd.lib wxjpegd.lib wxtiffd.lib wxmsw28ud_stc.lib wxmsw28ud_ogl.lib wxmsw28ud_xrc.lib wxexpatd.lib libpq.lib libxml2.lib libxslt.lib iconv_a.lib comctl32.lib rpcrt4.lib wsock32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib oleaut32.lib ole32.lib shell32.lib odbc32.lib"
+				AdditionalDependencies="wxbase28ud.lib wxbase28ud_xml.lib wxbase28ud_net.lib wxmsw28ud_adv.lib wxmsw28ud_core.lib wxmsw28ud_html.lib wxmsw28ud_aui.lib wxregexud.lib wxpngd.lib wxzlibd.lib wxjpegd.lib wxtiffd.lib wxmsw28ud_stc.lib wxmsw28ud_xrc.lib wxexpatd.lib libpq.lib libxml2.lib libxslt.lib iconv_a.lib comctl32.lib rpcrt4.lib wsock32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib oleaut32.lib ole32.lib shell32.lib odbc32.lib"
 				OutputFile=".\Debug/pgAdmin3.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="&quot;$(WXWIN)/lib/vc_lib&quot;;&quot;$(PGDIR)/lib&quot;;&quot;$(PGBUILD)/libxml2/lib&quot;;&quot;$(PGBUILD)/libxslt/lib&quot;;&quot;$(PGBUILD)/iconv/lib&quot;"
+				AdditionalLibraryDirectories="&quot;$(WXWIN)/lib/vc_dll&quot;;&quot;$(PGDIR)/lib&quot;;&quot;$(PGBUILD)/libxml2/lib&quot;;&quot;$(PGBUILD)/libxslt/lib&quot;;&quot;$(PGBUILD)/iconv/lib&quot;"
 				IgnoreDefaultLibraryNames="libcd.lib,libcid.lib,msvcrt.lib"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\Debug/pgAdmin3.pdb"
@@ -998,6 +994,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\dlg\dlgExtension.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\dlg\dlgExtTable.cpp"
 				>
 			</File>
@@ -1011,6 +1011,14 @@
 			</File>
 			<File
 				RelativePath=".\dlg\dlgForeignKey.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\dlg\dlgForeignServer.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\dlg\dlgForeignTable.cpp"
 				>
 			</File>
 			<File
@@ -1135,6 +1143,10 @@
 			</File>
 			<File
 				RelativePath=".\dlg\dlgUser.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\dlg\dlgUserMapping.cpp"
 				>
 			</File>
 			<File
@@ -1821,6 +1833,18 @@
 					>
 				</File>
 				<File
+					RelativePath=".\include\images\extension-sm.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\extension.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\extensions.png"
+					>
+				</File>
+				<File
 					RelativePath=".\include\images\exttable-sm.png"
 					>
 				</File>
@@ -1870,6 +1894,26 @@
 				</File>
 				<File
 					RelativePath=".\include\images\foreignkeybad.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\foreignserver-sm.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\foreignserver.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\foreignservers.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\foreigntable.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\foreigntables.png"
 					>
 				</File>
 				<File
@@ -2421,6 +2465,18 @@
 					>
 				</File>
 				<File
+					RelativePath=".\include\images\usermapping-sm.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\usermapping.png"
+					>
+				</File>
+				<File
+					RelativePath=".\include\images\usermappings.png"
+					>
+				</File>
+				<File
 					RelativePath=".\include\images\users.png"
 					>
 				</File>
@@ -2625,6 +2681,10 @@
 					>
 				</File>
 				<File
+					RelativePath=".\include\dlg\dlgExtension.h"
+					>
+				</File>
+				<File
 					RelativePath=".\include\dlg\dlgExtTable.h"
 					>
 				</File>
@@ -2638,6 +2698,14 @@
 				</File>
 				<File
 					RelativePath=".\include\dlg\dlgForeignKey.h"
+					>
+				</File>
+				<File
+					RelativePath=".\include\dlg\dlgForeignServer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\include\dlg\dlgForeignTable.h"
 					>
 				</File>
 				<File
@@ -2762,6 +2830,10 @@
 				</File>
 				<File
 					RelativePath=".\include\dlg\dlgUser.h"
+					>
+				</File>
+				<File
+					RelativePath=".\include\dlg\dlgUserMapping.h"
 					>
 				</File>
 				<File
@@ -2953,11 +3025,23 @@
 					>
 				</File>
 				<File
+					RelativePath=".\include\schema\pgExtension.h"
+					>
+				</File>
+				<File
 					RelativePath=".\include\schema\pgForeignDataWrapper.h"
 					>
 				</File>
 				<File
 					RelativePath=".\include\schema\pgForeignKey.h"
+					>
+				</File>
+				<File
+					RelativePath=".\include\schema\pgForeignServer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\include\schema\pgForeignTable.h"
 					>
 				</File>
 				<File
@@ -3050,6 +3134,10 @@
 				</File>
 				<File
 					RelativePath=".\include\schema\pgUser.h"
+					>
+				</File>
+				<File
+					RelativePath=".\include\schema\pgUserMapping.h"
 					>
 				</File>
 				<File
@@ -3830,11 +3918,23 @@
 				>
 			</File>
 			<File
+				RelativePath=".\schema\pgExtension.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\schema\pgForeignDataWrapper.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\schema\pgForeignKey.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\schema\pgForeignServer.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\schema\pgForeignTable.cpp"
 				>
 			</File>
 			<File
@@ -3927,6 +4027,10 @@
 			</File>
 			<File
 				RelativePath=".\schema\pgUser.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\schema\pgUserMapping.cpp"
 				>
 			</File>
 			<File
@@ -4058,6 +4162,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\ui\dlgExtension.xrc"
+				>
+			</File>
+			<File
 				RelativePath=".\ui\dlgExtTable.xrc"
 				>
 			</File>
@@ -4066,7 +4174,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\ui\dlgForeignDataWrapper.xrc"
+				>
+			</File>
+			<File
 				RelativePath=".\ui\dlgForeignKey.xrc"
+				>
+			</File>
+			<File
+				RelativePath=".\ui\dlgForeignServer.xrc"
+				>
+			</File>
+			<File
+				RelativePath=".\ui\dlgForeignTable.xrc"
 				>
 			</File>
 			<File
@@ -4239,6 +4359,10 @@
 			</File>
 			<File
 				RelativePath=".\ui\dlgUser.xrc"
+				>
+			</File>
+			<File
+				RelativePath=".\ui\dlgUserMapping.xrc"
 				>
 			</File>
 			<File

@@ -20,11 +20,13 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/dlg/dlgConversion.h \
 	$(srcdir)/include/dlg/dlgDatabase.h \
 	$(srcdir)/include/dlg/dlgDomain.h \
+	$(srcdir)/include/dlg/dlgExtension.h \
 	$(srcdir)/include/dlg/dlgEditGridOptions.h \
 	$(srcdir)/include/dlg/dlgFindReplace.h \
 	$(srcdir)/include/dlg/dlgForeignDataWrapper.h \
 	$(srcdir)/include/dlg/dlgForeignKey.h \
 	$(srcdir)/include/dlg/dlgForeignServer.h \
+	$(srcdir)/include/dlg/dlgForeignTable.h \
 	$(srcdir)/include/dlg/dlgFunction.h \
 	$(srcdir)/include/dlg/dlgGroup.h \
 	$(srcdir)/include/dlg/dlgHbaConfig.h \
@@ -54,6 +56,7 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/dlg/dlgTrigger.h \
 	$(srcdir)/include/dlg/dlgType.h \
 	$(srcdir)/include/dlg/dlgUser.h \
+	$(srcdir)/include/dlg/dlgUserMapping.h \
 	$(srcdir)/include/dlg/dlgView.h \
 	$(srcdir)/include/dlg/dlgManageMacros.h \
 	$(srcdir)/include/dlg/dlgExtTable.h \

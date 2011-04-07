@@ -26,9 +26,11 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/schema/pgDatabase.h \
 	$(srcdir)/include/schema/pgDatatype.h \
 	$(srcdir)/include/schema/pgDomain.h \
+	$(srcdir)/include/schema/pgExtension.h \
 	$(srcdir)/include/schema/pgForeignDataWrapper.h \
 	$(srcdir)/include/schema/pgForeignKey.h \
-    $(subdir)/pgForeignServer.h \
+	$(srcdir)/include/schema/pgForeignServer.h \
+	$(srcdir)/include/schema/pgForeignTable.h \
 	$(srcdir)/include/schema/pgFunction.h \
 	$(srcdir)/include/schema/pgGroup.h \
 	$(srcdir)/include/schema/pgIndex.h \
@@ -52,6 +54,7 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/schema/pgTrigger.h \
 	$(srcdir)/include/schema/pgType.h \
 	$(srcdir)/include/schema/pgUser.h \
+	$(srcdir)/include/schema/pgUserMapping.h \
 	$(srcdir)/include/schema/pgView.h \
 	$(srcdir)/include/schema/gpExtTable.h \
 	$(srcdir)/include/schema/gpResQueue.h \

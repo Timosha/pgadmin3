@@ -28,9 +28,11 @@ pgadmin3_SOURCES += \
         $(subdir)/pgDatabase.cpp \
         $(subdir)/pgDatatype.cpp \
         $(subdir)/pgDomain.cpp \
+        $(subdir)/pgExtension.cpp \
         $(subdir)/pgForeignDataWrapper.cpp \
         $(subdir)/pgForeignKey.cpp \
         $(subdir)/pgForeignServer.cpp \
+        $(subdir)/pgForeignTable.cpp \
         $(subdir)/pgFunction.cpp \
         $(subdir)/pgGroup.cpp \
         $(subdir)/pgIndex.cpp \
@@ -54,6 +56,7 @@ pgadmin3_SOURCES += \
         $(subdir)/pgTrigger.cpp \
         $(subdir)/pgType.cpp \
         $(subdir)/pgUser.cpp \
+        $(subdir)/pgUserMapping.cpp \
         $(subdir)/pgView.cpp \
         $(subdir)/gpExtTable.cpp \
         $(subdir)/gpResQueue.cpp \

@@ -127,7 +127,7 @@ protected:
 class pgForeignDataWrapperObjCollection : public pgCollection
 {
 public:
-	pgForeignDataWrapperObjCollection(pgaFactory *factory, pgForeignDataWrapper *fdw);
+	pgForeignDataWrapperObjCollection(pgaFactory *factory, pgForeignDataWrapper *newfdw);
 	wxString GetTranslatedMessage(int kindOfMessage) const;
 	virtual bool CanCreate();
 };

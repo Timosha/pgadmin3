@@ -23,12 +23,14 @@ TMP_ui += \
 	$(srcdir)/ui/dlgDatabase.xrc \
 	$(srcdir)/ui/dlgDirectDbg.xrc \
 	$(srcdir)/ui/dlgDomain.xrc \
+	$(srcdir)/ui/dlgExtension.xrc \
 	$(srcdir)/ui/dlgEditGridOptions.xrc \
 	$(srcdir)/ui/dlgExtTable.xrc \
 	$(srcdir)/ui/dlgFindReplace.xrc \
 	$(srcdir)/ui/dlgForeignDataWrapper.xrc \
 	$(srcdir)/ui/dlgForeignKey.xrc \
 	$(srcdir)/ui/dlgForeignServer.xrc \
+	$(srcdir)/ui/dlgForeignTable.xrc \
 	$(srcdir)/ui/dlgFunction.xrc \
 	$(srcdir)/ui/dlgGroup.xrc \
 	$(srcdir)/ui/dlgHbaConfig.xrc \
@@ -72,6 +74,7 @@ TMP_ui += \
 	$(srcdir)/ui/dlgTrigger.xrc \
 	$(srcdir)/ui/dlgType.xrc \
 	$(srcdir)/ui/dlgUser.xrc \
+	$(srcdir)/ui/dlgUserMapping.xrc \
 	$(srcdir)/ui/dlgView.xrc \
 	$(srcdir)/ui/frmBackup.xrc \
 	$(srcdir)/ui/frmBackupGlobals.xrc \

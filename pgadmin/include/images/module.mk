@@ -58,6 +58,9 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/images/domain-sm.png \
 	$(srcdir)/include/images/domain.png \
 	$(srcdir)/include/images/domains.png \
+	$(srcdir)/include/images/extension-sm.png \
+	$(srcdir)/include/images/extension.png \
+	$(srcdir)/include/images/extensions.png \
 	$(srcdir)/include/images/down.png \
 	$(srcdir)/include/images/drop.png \
 	$(srcdir)/include/images/edit_clear.png \
@@ -116,6 +119,8 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/images/foreignserver.png \
 	$(srcdir)/include/images/foreignserver-sm.png \
 	$(srcdir)/include/images/foreignservers.png \
+	$(srcdir)/include/images/foreigntable.png \
+	$(srcdir)/include/images/foreigntables.png \
 	$(srcdir)/include/images/forward.png \
 	$(srcdir)/include/images/function.png \
 	$(srcdir)/include/images/functions.png \
@@ -237,6 +242,7 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/images/template.png \
 	$(srcdir)/include/images/templates.png \
 	$(srcdir)/include/images/terminate_backend.png \
+	$(srcdir)/include/images/textsearch.png \
 	$(srcdir)/include/images/trigger.png \
 	$(srcdir)/include/images/triggerbad.png \
 	$(srcdir)/include/images/triggerfunction.png \
@@ -249,6 +255,9 @@ pgadmin3_SOURCES += \
 	$(srcdir)/include/images/unique.png \
 	$(srcdir)/include/images/up.png \
 	$(srcdir)/include/images/user.png \
+	$(srcdir)/include/images/usermapping.png \
+	$(srcdir)/include/images/usermapping-sm.png \
+	$(srcdir)/include/images/usermappings.png \
 	$(srcdir)/include/images/users.png \
 	$(srcdir)/include/images/vacuum.png \
 	$(srcdir)/include/images/variable.png \
