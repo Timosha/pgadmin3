@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <resource>
-  <object class="wxDialog" name="dlgSynonym">
+  <object class="wxDialog" name="dlgCollation">
     <title></title>
-    <size>300,265d</size>
+    <size>220,280d</size>
     <style>wxDEFAULT_DIALOG_STYLE|wxCAPTION|wxSYSTEM_MENU|wxRESIZE_BORDER</style>
     <object class="wxFlexGridSizer">
       <cols>1</cols>
@@ -10,18 +10,17 @@
       <growablecols>0</growablecols>
       <object class="sizeritem">
         <object class="wxNotebook" name="nbNotebook">
-          <size>296,240d</size>
+          <size>216,255d</size>
           <selected>0</selected>
           <object class="notebookpage">
             <label>Properties</label>
             <object class="wxPanel" name="pnlProperties">
               <object class="wxFlexGridSizer">
                 <cols>2</cols>
-                <rows>4</rows>
                 <vgap>5</vgap>
                 <hgap>5</hgap>
+                <growablerows>3</growablerows>
                 <growablecols>1</growablecols>
-                <growablerows>2</growablerows>
                 <object class="sizeritem">
                   <object class="wxStaticText" name="stName">
                     <label>Name</label>
@@ -36,10 +35,23 @@
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
+                  <object class="wxStaticText" name="stOID">
+                    <label>OID</label>
+                  </object>
+                  <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <border>4</border>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl" name="txtOID">
+                  </object>
+                  <flag>wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <border>4</border>
+                </object>
+                <object class="sizeritem">
                   <object class="wxStaticText" name="stOwner">
                     <label>Owner</label>
                   </object>
-                  <flag>wxALIGN_CENTRE_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
@@ -54,7 +66,7 @@
                   <object class="wxStaticText" name="stComment">
                     <label>Comment</label>
                   </object>
-                  <flag>wxALIGN_CENTRE_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
@@ -68,7 +80,7 @@
                   <object class="wxStaticText" name="stClusterSet">
                     <label>Use replication</label>
                   </object>
-                  <flag>wxALIGN_CENTRE_VERTICAL|wxALL</flag>
+                  <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
@@ -76,9 +88,9 @@
                     <content/>
                     <style>wxCB_READONLY|wxCB_DROPDOWN</style>
                   </object>
-                  <flag>wxEXPAND|wxALIGN_CENTRE_VERTICAL|wxALL</flag>
+                  <flag>wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL</flag>
                   <border>4</border>
-              </object>
+                </object>
               </object>
             </object>
           </object>
@@ -87,51 +99,59 @@
             <object class="wxPanel" name="pnlDefinition">
               <object class="wxFlexGridSizer">
                 <cols>2</cols>
-                <rows>3</rows>
                 <vgap>5</vgap>
                 <hgap>5</hgap>
                 <growablecols>1</growablecols>
                 <object class="sizeritem">
-                  <object class="wxStaticText" name="stTargetType">
-                    <label>Target type</label>
+                  <object class="wxStaticText" name="stLocale">
+                    <label>Locale</label>
                   </object>
                   <flag>wxALIGN_CENTRE_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
-                  <object class="ctlComboBox" name="cbTargetType">
-                    <content/>
-                    <style>wxCB_READONLY|wxCB_DROPDOWN</style>
+                  <object class="wxTextCtrl" name="txtLocale">
                   </object>
                   <flag>wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
-                  <object class="wxStaticText" name="stTargetSchema">
-                    <label>Target schema</label>
+                  <object class="wxStaticText" name="stLcCollate">
+                    <label>LC_COLLATE</label>
                   </object>
-                  <flag>wxALIGN_CENTRE_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
-                  <object class="ctlComboBox" name="cbTargetSchema">
-                    <content/>
-                    <style>wxCB_READONLY|wxCB_DROPDOWN</style>
+                  <object class="wxTextCtrl" name="txtLcCollate">
                   </object>
                   <flag>wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
-                  <object class="wxStaticText" name="stTargetObject">
-                    <label>Target object</label>
+                  <object class="wxStaticText" name="stLcCtype">
+                    <label>LC_CTYPE</label>
                   </object>
-                  <flag>wxALIGN_CENTRE_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
                 </object>
                 <object class="sizeritem">
-                  <object class="wxComboBox" name="cbTargetObject">
+                  <object class="wxTextCtrl" name="txtLcCtype">
+                  </object>
+                  <flag>wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <border>4</border>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxStaticText" name="stCollation">
+                    <label>Copy collation</label>
+                  </object>
+                  <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
+                  <border>4</border>
+                </object>
+                <object class="sizeritem">
+                  <object class="ctlComboBox" name="cbCollation">
                     <content/>
-                    <style>wxCB_READONLY|wxCB_DROPDOWN</style>
+                    <style>wxCB_DROPDOWN</style>
                   </object>
                   <flag>wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxLEFT|wxRIGHT</flag>
                   <border>4</border>
@@ -140,12 +160,12 @@
             </object>
           </object>
         </object>
-        <flag>wxALL|wxGROW|wxALIGN_CENTRE</flag>
+        <flag>wxEXPAND|wxALIGN_CENTRE|wxALL</flag>
         <border>3</border>
       </object>
       <object class="sizeritem">
         <object class="wxFlexGridSizer">
-          <cols>5</cols>
+          <cols>4</cols>
           <growablecols>1</growablecols>
           <object class="sizeritem">
             <object class="wxButton" name="wxID_HELP">

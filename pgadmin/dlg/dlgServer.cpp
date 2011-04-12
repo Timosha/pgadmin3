@@ -28,8 +28,10 @@
 #include "schema/pgDatabase.h"
 
 // pointer to controls
+#define txtHostAddr       CTRL_TEXT("txtHostAddr")
 #define txtDescription    CTRL_TEXT("txtDescription")
 #define txtService        CTRL_TEXT("txtService")
+#define txtServiceID      CTRL_TEXT("txtServiceID")
 #define cbDatabase        CTRL_COMBOBOX("cbDatabase")
 #define txtPort           CTRL_TEXT("txtPort")
 #define cbSSL             CTRL_COMBOBOX("cbSSL")
@@ -54,8 +56,10 @@
 
 BEGIN_EVENT_TABLE(dlgServer, dlgProperty)
 	EVT_NOTEBOOK_PAGE_CHANGED(XRCID("nbNotebook"),     dlgServer::OnPageSelect)
+	EVT_TEXT(XRCID("txtHostAddr"),                     dlgProperty::OnChange)
 	EVT_TEXT(XRCID("txtDescription"),                  dlgProperty::OnChange)
 	EVT_TEXT(XRCID("txtService"),                      dlgProperty::OnChange)
+	EVT_TEXT(XRCID("txtServiceID"),                    dlgProperty::OnChange)
 	EVT_TEXT(XRCID("cbDatabase"),                      dlgProperty::OnChange)
 	EVT_COMBOBOX(XRCID("cbDatabase"),                  dlgProperty::OnChange)
 	EVT_TEXT(XRCID("txtPort")  ,                       dlgProperty::OnChange)
@@ -169,11 +173,13 @@ void dlgServer::OnOK(wxCommandEvent &ev)
 	if (server)
 	{
 		server->iSetName(GetName());
+		server->iSetHostAddr(txtHostAddr->GetValue());
 		server->iSetDescription(txtDescription->GetValue());
-		if (txtService->GetValue() != server->GetServiceID())
+		server->iSetService(txtService->GetValue());
+		if (txtServiceID->GetValue() != server->GetServiceID())
 		{
 			mainForm->StartMsg(_("Checking server status"));
-			server->iSetServiceID(txtService->GetValue());
+			server->iSetServiceID(txtServiceID->GetValue());
 			mainForm->EndMsg();
 		}
 		server->iSetPort(StrToLong(txtPort->GetValue()));
@@ -205,7 +211,9 @@ void dlgServer::OnOK(wxCommandEvent &ev)
 			// Duplicate server object
 			pgServer *newserver = new pgServer(
 			    server->GetName(),
+			    server->GetHostAddr(),
 			    server->GetDescription(),
+			    server->GetService(),
 			    server->GetDatabaseName(),
 			    server->GetUsername(),
 			    server->GetPort(),
@@ -372,8 +380,10 @@ int dlgServer::Go(bool modal)
 	{
 		if (cbDatabase->FindString(server->GetDatabaseName()) < 0)
 			cbDatabase->Append(server->GetDatabaseName());
+		txtHostAddr->SetValue(server->GetHostAddr());
 		txtDescription->SetValue(server->GetDescription());
-		txtService->SetValue(server->GetServiceID());
+		txtService->SetValue(server->GetService());
+		txtServiceID->SetValue(server->GetServiceID());
 		txtPort->SetValue(NumToStr((long)server->GetPort()));
 		cbSSL->SetSelection(server->GetSSL());
 		cbDatabase->SetValue(server->GetDatabaseName());
@@ -394,8 +404,10 @@ int dlgServer::Go(bool modal)
 		txtPassword->Disable();
 		if (connection)
 		{
+			txtHostAddr->Disable();
 			txtDescription->Disable();
 			txtService->Disable();
+			txtServiceID->Disable();
 			txtName->Disable();
 			cbDatabase->Disable();
 			txtPort->Disable();
@@ -438,7 +450,8 @@ pgObject *dlgServer::CreateObject(pgCollection *collection)
 {
 	wxString name = GetName();
 
-	pgServer *obj = new pgServer(GetName(), txtDescription->GetValue(), cbDatabase->GetValue(),
+	pgServer *obj = new pgServer(GetName(), txtHostAddr->GetValue(), txtDescription->GetValue(),
+	                             txtService->GetValue(), cbDatabase->GetValue(),
 	                             txtUsername->GetValue(), StrToLong(txtPort->GetValue()),
 	                             chkTryConnect->GetValue() && chkStorePwd->GetValue(),
 	                             txtRolename->GetValue(), chkRestore->GetValue(), cbSSL->GetCurrentSelection(),
@@ -476,8 +489,10 @@ void dlgServer::CheckChange()
 		wxString sColour2 = colourPicker->GetColourString();
 
 		enable =  name != server->GetName()
+		          || txtHostAddr->GetValue() != server->GetHostAddr()
 		          || txtDescription->GetValue() != server->GetDescription()
-		          || txtService->GetValue() != server->GetServiceID()
+		          || txtService->GetValue() != server->GetService()
+		          || txtServiceID->GetValue() != server->GetServiceID()
 		          || StrToLong(txtPort->GetValue()) != server->GetPort()
 		          || cbDatabase->GetValue() != server->GetDatabaseName()
 		          || txtUsername->GetValue() != server->GetUsername()
@@ -501,8 +516,11 @@ void dlgServer::CheckChange()
 	cbSSL->Enable(!isPipe && !connection);
 #endif
 	CheckValid(enable, !txtDescription->GetValue().IsEmpty(), _("Please specify description."));
-	CheckValid(enable, StrToLong(txtPort->GetValue()) > 0, _("Please specify port."));
-	CheckValid(enable, !txtUsername->GetValue().IsEmpty(), _("Please specify user name"));
+	if (txtService->GetValue().IsEmpty())
+	{
+		CheckValid(enable, StrToLong(txtPort->GetValue()) > 0, _("Please specify port."));
+		CheckValid(enable, !txtUsername->GetValue().IsEmpty(), _("Please specify user name"));
+	}
 	CheckValid(enable, dbRestrictionOk, _("Restriction not valid."));
 
 	EnableOK(enable && !connection);
