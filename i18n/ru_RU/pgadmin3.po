@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pgAdmin III 1.14.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-26 22:13+0200\n"
-"PO-Revision-Date: 2011-04-27 14:13+0500\n"
+"PO-Revision-Date: 2011-04-27 15:04+0500\n"
 "Last-Translator: Timon <timosha@gmail.com>\n"
 "Language-Team: pgAdmin Developers <pgadmin-hackers@postgresql.org>\n"
 "Language: \n"
@@ -1051,7 +1051,7 @@ msgstr "&Создать..."
 #: pgadmin/frm/frmReport.cpp:1237
 #, fuzzy
 msgid "&DDL Report"
-msgstr "&DDL-отчет"
+msgstr "&DDL отчет"
 
 #: src/frm/frmReport.cpp:1235
 #: pgadmin/frm/frmReport.cpp:1219
@@ -2308,9 +2308,8 @@ msgid "&Server Status"
 msgstr "&Состояние сервера"
 
 #: pgadmin/frm/frmStatus.cpp:249
-#, fuzzy
 msgid "&Server status help"
-msgstr "&Состояние сервера"
+msgstr "&Справка по состоянию сервера"
 
 # standard input:6
 # standard
@@ -2707,7 +2706,7 @@ msgstr "-t <интервал опроса в секундах (по умолча
 #: xtra/pgagent/win32.cpp:346
 #: xtra/pgagent/win32.cpp:411
 msgid "-u <user or DOMAIN\\user>\n"
-msgstr "-u <user or DOMAIN\\user>\n"
+msgstr "-u <user или DOMAIN\\user>\n"
 
 # standard input:13 standard input:23
 # standard
@@ -3810,9 +3809,8 @@ msgid "Add a table or view to the datagram."
 msgstr "Добавить таблицу или представление к датаграмме."
 
 #: pgadmin/ui/dlgType.xrc:23
-#, fuzzy
 msgid "Add after"
-msgstr "Добавить в Избранное"
+msgstr "Добавить после"
 
 # standard input:7
 # standard input:7
@@ -3827,9 +3825,8 @@ msgid "Add all columns"
 msgstr "Добавить все колонки"
 
 #: pgadmin/ui/dlgType.xrc:22
-#, fuzzy
 msgid "Add before"
-msgstr "Добавить сервер"
+msgstr "Добавить перед"
 
 #: src/frm/frmQuery.cpp:186
 #: pgadmin/frm/frmQuery.cpp:203
@@ -3892,7 +3889,7 @@ msgstr "&Добавить в Избранное..."
 #: pgadmin/schema/pgServer.cpp:1956
 #: pgadmin/schema/pgServer.cpp:1963
 msgid "Add named restore point"
-msgstr ""
+msgstr "Добавить имя точки восстановления"
 
 #: src/dlg/dlgServer.cpp:232
 #: src/dlg/dlgServer.cpp:238
@@ -4492,7 +4489,7 @@ msgid "Are you sure you wish to drop FTS configuration \"%s\" including all obje
 msgstr "Вы уверены, что хотите удалить конфигурацию FTS \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgTextSearchConfiguration.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop FTS configuration \"%s\"?"
 msgstr "Вы уверены, что хотите удалить конфигурацию FTS \"%s\"?"
 
@@ -4502,7 +4499,7 @@ msgid "Are you sure you wish to drop FTS dictionary \"%s\" including all objects
 msgstr "Вы уверены, что хотите удалить словарь FTS \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgTextSearchDictionary.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop FTS dictionary \"%s\"?"
 msgstr "Вы уверены, что хотите удалить словарь FTS \"%s\"?"
 
@@ -4512,7 +4509,7 @@ msgid "Are you sure you wish to drop FTS parser \"%s\" including all objects tha
 msgstr "Вы уверены, что хотите удалить парсер FTS \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgTextSearchParser.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop FTS parser \"%s\"?"
 msgstr "Вы уверены, что хотите удалить парсер FTS \"%s\"?"
 
@@ -4522,7 +4519,7 @@ msgid "Are you sure you wish to drop FTS template \"%s\" including all objects t
 msgstr "Вы уверены, что хотите удалить шаблон FTS \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgTextSearchTemplate.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop FTS template \"%s\"?"
 msgstr "Вы уверены, что хотите удалить шаблон FTS \"%s\"?"
 
@@ -4532,9 +4529,9 @@ msgid "Are you sure you wish to drop aggregate \"%s\" including all objects that
 msgstr "Вы уверены, что хотите удалить агрегат \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgAggregate.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop aggregate \"%s\"?"
-msgstr "Вы уверены, что хотите удалить агрегат \"%s\"?"
+msgstr "Вы уверены, что хотите удалить агрегирующую функцию \"%s\"?"
 
 #: pgadmin/schema/pgRole.cpp:317
 #: pgadmin/schema/pgRole.cpp:323
@@ -4548,7 +4545,7 @@ msgid "Are you sure you wish to drop cast \"%s\" including all objects that depe
 msgstr "Вы уверены, что хотите удалить приведение типов \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgCast.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop cast \"%s\"?"
 msgstr "Вы уверены, что хотите удалить приведение типов \"%s\"?"
 
@@ -4578,7 +4575,7 @@ msgid "Are you sure you wish to drop column \"%s\" including all objects that de
 msgstr "Вы уверены, что хотите удалить колонку \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgColumn.cpp:59
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop column \"%s\"?"
 msgstr "Вы уверены, что хотите удалить колонку \"%s\"?"
 
@@ -4588,7 +4585,7 @@ msgid "Are you sure you wish to drop conversion \"%s\" including all objects tha
 msgstr "Вы уверены, что хотите удалить преобразование \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgConversion.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop conversion \"%s\"?"
 msgstr "Вы уверены, что хотите удалить преобразование \"%s\"?"
 
@@ -4598,7 +4595,7 @@ msgid "Are you sure you wish to drop database \"%s\" including all objects that 
 msgstr "Вы уверены, что хотите удалить базу данных \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgDatabase.cpp:68
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop database \"%s\"?"
 msgstr "Вы уверены, что хотите удалить базу данных \"%s\"?"
 
@@ -4608,29 +4605,29 @@ msgid "Are you sure you wish to drop domain \"%s\" including all objects that de
 msgstr "Вы уверены, что хотите удалить домен \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgDomain.cpp:50
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop domain \"%s\"?"
 msgstr "Вы уверены, что хотите удалить домен \"%s\"?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:386
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop exclusion constraint \"%s\" including all objects that depend on it?"
-msgstr "Вы уверены, что хотите удалить ограничение-проверку \"%s\" включая все объекты зависящие от него?"
+msgstr "Вы уверены, что хотите удалить исключающее ограничение \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:390
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop exclusion constraint \"%s\"?"
-msgstr "Вы уверены, что хотите удалить ограничение-проверку \"%s\"?"
+msgstr "Вы уверены, что хотите удалить исключающее ограничение \"%s\"?"
 
 #: pgadmin/schema/pgExtension.cpp:41
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop extension \"%s\" including all objects that depend on it?"
-msgstr "Вы уверены, что хотите удалить преобразование \"%s\" включая все объекты зависящие от него?"
+msgstr "Вы уверены, что хотите удалить расширение \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgExtension.cpp:45
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop extension \"%s\"?"
-msgstr "Вы уверены, что хотите удалить %s \"%s\"?"
+msgstr "Вы уверены, что хотите удалить расширение \"%s\"?"
 
 #: pgadmin/schema/gpExtTable.cpp:47
 #, c-format
@@ -4638,19 +4635,19 @@ msgid "Are you sure you wish to drop external table \"%s\" including all objects
 msgstr "Вы уверены, что хотите удалить внешнюю таблицу \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/gpExtTable.cpp:51
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop external table \"%s\"?"
 msgstr "Вы уверены, что хотите удалить внешнюю таблицу \"%s\"?"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:43
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop foreign data wrapper \"%s\" including all objects that depend on it?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\" включая все объекты зависящие от него?"
+msgstr "Вы уверены, что хотите удалить обёртку внешних данных \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:47
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop foreign data wrapper \"%s\"?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\"?"
+msgstr "Вы уверены, что хотите удалить обёртку внешних данных \"%s\"?"
 
 #: pgadmin/schema/pgForeignKey.cpp:51
 #, c-format
@@ -4663,24 +4660,24 @@ msgid "Are you sure you wish to drop foreign key \"%s\"?"
 msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\"?"
 
 #: pgadmin/schema/pgForeignServer.cpp:44
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop foreign server \"%s\" including all objects that depend on it?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\" включая все объекты зависящие от него?"
+msgstr "Вы уверены, что хотите удалить внешний сервер \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgForeignServer.cpp:48
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop foreign server \"%s\"?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\"?"
+msgstr "Вы уверены, что хотите удалить внешний сервер \"%s\"?"
 
 #: pgadmin/schema/pgForeignTable.cpp:46
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop foreign table \"%s\" including all objects that depend on it?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\" включая все объекты зависящие от него?"
+msgstr "Вы уверены, что хотите удалить внешнюю таблицу \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgForeignTable.cpp:50
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop foreign table \"%s\"?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\"?"
+msgstr "Вы уверены, что хотите удалить внешнюю таблицу \"%s\"?"
 
 #: pgadmin/schema/pgFunction.cpp:62
 #, c-format
@@ -4688,7 +4685,7 @@ msgid "Are you sure you wish to drop function \"%s\" including all objects that 
 msgstr "Вы уверены, что хотите удалить функцию \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgFunction.cpp:66
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop function \"%s\"?"
 msgstr "Вы уверены, что хотите удалить функцию \"%s\"?"
 
@@ -4698,7 +4695,7 @@ msgid "Are you sure you wish to drop group \"%s\" including all objects that dep
 msgstr "Вы уверены, что хотите удалить группу \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgGroup.cpp:51
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop group \"%s\"?"
 msgstr "Вы уверены, что хотите удалить группу \"%s\"?"
 
@@ -4708,7 +4705,7 @@ msgid "Are you sure you wish to drop group role \"%s\" including all objects tha
 msgstr "Вы уверены, что хотите удалить групповую роль \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgRole.cpp:126
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop group role \"%s\"?"
 msgstr "Вы уверены, что хотите удалить групповую роль \"%s\"?"
 
@@ -4718,7 +4715,7 @@ msgid "Are you sure you wish to drop index \"%s\" including all objects that dep
 msgstr "Вы уверены, что хотите удалить индекс \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgIndex.cpp:54
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop index \"%s\"?"
 msgstr "Вы уверены, что хотите удалить индекс \"%s\"?"
 
@@ -4738,7 +4735,7 @@ msgid "Are you sure you wish to drop language \"%s\" including all objects that 
 msgstr "Вы уверены, что хотите удалить язык \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgLanguage.cpp:45
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop language \"%s\"?"
 msgstr "Вы уверены, что хотите удалить язык \"%s\"?"
 
@@ -4748,7 +4745,7 @@ msgid "Are you sure you wish to drop login role \"%s\" including all objects tha
 msgstr "Вы уверены, что хотите удалить роль входа \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgRole.cpp:64
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop login role \"%s\"?"
 msgstr "Вы уверены, что хотите удалить роль входа \"%s\"?"
 
@@ -4776,7 +4773,7 @@ msgid "Are you sure you wish to drop operator \"%s\" including all objects that 
 msgstr "Вы уверены, что хотите удалить оператор \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgOperator.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop operator \"%s\"?"
 msgstr "Вы уверены, что хотите удалить оператор \"%s\"?"
 
@@ -4786,7 +4783,7 @@ msgid "Are you sure you wish to drop operator class \"%s\" including all objects
 msgstr "Вы уверены, что хотите удалить класс операторов \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgOperatorClass.cpp:50
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop operator class \"%s\"?"
 msgstr "Вы уверены, что хотите удалить класс операторов \"%s\"?"
 
@@ -4796,7 +4793,7 @@ msgid "Are you sure you wish to drop operator family \"%s\" including all object
 msgstr "Вы уверены, что хотите удалить семейство операторов \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgOperatorFamily.cpp:50
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop operator family \"%s\"?"
 msgstr "Вы уверены, что хотите удалить семейство операторов \"%s\"?"
 
@@ -4806,19 +4803,19 @@ msgid "Are you sure you wish to drop package \"%s\" including all objects that d
 msgstr "Вы уверены, что хотите удалить пакет \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/edbPackage.cpp:46
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop package \"%s\"?"
 msgstr "Вы уверены, что хотите удалить пакет \"%s\"?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:220
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop primary key \"%s\" including all objects that depend on it?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\" включая все объекты зависящие от него?"
+msgstr "Вы уверены, что хотите удалить первичный ключ \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:224
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop primary key \"%s\"?"
-msgstr "Вы уверены, что хотите удалить внешний ключ \"%s\"?"
+msgstr "Вы уверены, что хотите удалить первичный ключ \"%s\"?"
 
 #: pgadmin/schema/pgFunction.cpp:184
 #, c-format
@@ -4826,7 +4823,7 @@ msgid "Are you sure you wish to drop procedure \"%s\" including all objects that
 msgstr "Вы уверены, что хотите удалить процедуру \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgFunction.cpp:188
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop procedure \"%s\"?"
 msgstr "Вы уверены, что хотите удалить процедуру \"%s\"?"
 
@@ -4836,7 +4833,7 @@ msgid "Are you sure you wish to drop resource queue \"%s\" including all objects
 msgstr "Вы уверены, что хотите удалить очередь \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/gpResQueue.cpp:54
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop resource queue \"%s\"?"
 msgstr "Вы уверены, что хотите удалить очередь \"%s\"?"
 
@@ -4846,7 +4843,7 @@ msgid "Are you sure you wish to drop rule \"%s\" including all objects that depe
 msgstr "Вы уверены, что хотите удалить правило \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgRule.cpp:54
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop rule \"%s\"?"
 msgstr "Вы уверены, что хотите удалить правило \"%s\"?"
 
@@ -4856,7 +4853,7 @@ msgid "Are you sure you wish to drop schema \"%s\" including all objects that de
 msgstr "Вы уверены, что хотите удалить схему \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgSchema.cpp:75
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop schema \"%s\"?"
 msgstr "Вы уверены, что хотите удалить схему \"%s\"?"
 
@@ -4866,7 +4863,7 @@ msgid "Are you sure you wish to drop sequence \"%s\" including all objects that 
 msgstr "Вы уверены, что хотите удалить последовательность \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgSequence.cpp:50
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop sequence \"%s\"?"
 msgstr "Вы уверены, что хотите удалить последовательность \"%s\"?"
 
@@ -4881,7 +4878,7 @@ msgid "Are you sure you wish to drop synonym \"%s\" including all objects that d
 msgstr "Вы уверены, что хотите удалить синоним %s включая все объекты зависящие от ним?"
 
 #: pgadmin/schema/edbSynonym.cpp:44
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop synonym \"%s\"?"
 msgstr "Вы уверены, что хотите удалить синоним \"%s\"?"
 
@@ -4901,7 +4898,7 @@ msgid "Are you sure you wish to drop tablespace \"%s\" including all objects tha
 msgstr "Вы уверены, что хотите удалить табличное пространство \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgTablespace.cpp:49
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop tablespace \"%s\"?"
 msgstr "Вы уверены, что хотите удалить табличное пространство \"%s\"?"
 
@@ -4911,7 +4908,7 @@ msgid "Are you sure you wish to drop trigger \"%s\" including all objects that d
 msgstr "Вы уверены, что хотите удалить триггер \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgTrigger.cpp:65
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop trigger \"%s\"?"
 msgstr "Вы уверены, что хотите удалить триггер \"%s\"?"
 
@@ -4921,7 +4918,7 @@ msgid "Are you sure you wish to drop trigger function \"%s\" including all objec
 msgstr "Вы уверены, что хотите удалить триггерную функцию \"%s\" включая все объекты зависящие от неё?"
 
 #: pgadmin/schema/pgFunction.cpp:127
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop trigger function \"%s\"?"
 msgstr "Вы уверены, что хотите удалить триггерную функцию \"%s\"?"
 
@@ -4931,19 +4928,19 @@ msgid "Are you sure you wish to drop type \"%s\" including all objects that depe
 msgstr "Вы уверены, что хотите удалить тип \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgType.cpp:50
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop type \"%s\"?"
 msgstr "Вы уверены, что хотите удалить тип \"%s\"?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:303
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop unique constraint \"%s\" including all objects that depend on it?"
-msgstr "Вы уверены, что хотите удалить индексное ограничение \"%s\" включая все объекты зависящие от него?"
+msgstr "Вы уверены, что хотите удалить ограничение уникальности \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:307
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop unique constraint \"%s\"?"
-msgstr "Вы уверены, что хотите удалить индексное ограничение \"%s\"?"
+msgstr "Вы уверены, что хотите удалить ограничение уникальности \"%s\"?"
 
 #: pgadmin/schema/pgUser.cpp:49
 #, c-format
@@ -4951,7 +4948,7 @@ msgid "Are you sure you wish to drop user \"%s\" including all objects that depe
 msgstr "Вы уверены, что хотите удалить пользователя \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgUser.cpp:53
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop user \"%s\"?"
 msgstr "Вы уверены, что хотите удалить пользователя \"%s\"?"
 
@@ -4971,7 +4968,7 @@ msgid "Are you sure you wish to drop view \"%s\" including all objects that depe
 msgstr "Вы уверены, что хотите удалить представление \"%s\" включая все объекты зависящие от него?"
 
 #: pgadmin/schema/pgView.cpp:55
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you wish to drop view \"%s\"?"
 msgstr "Вы уверены, что хотите удалить представление \"%s\"?"
 
@@ -5384,9 +5381,8 @@ msgid "Backup globals %s %s"
 msgstr "Резервная копия глобальных объектов %s %s"
 
 #: pgadmin/schema/pgServer.cpp:103
-#, fuzzy
 msgid "Backup globals of server"
-msgstr "Глобальный бекап %s %s"
+msgstr ""
 
 #: pgadmin/schema/pgObject.cpp:322
 msgid "Backup globals of unknown object of type"
@@ -6716,9 +6712,8 @@ msgstr "Закрыть браузер серверов? Если вы отмен
 # standard
 # standard
 #: pgadmin/frm/events.cpp:1017
-#, fuzzy
 msgid "Close tab"
-msgstr "Закрыть"
+msgstr "Закрыть вкладку"
 
 #: standard input:133
 #: pgadmin/ui/dlgFindReplace.xrc:3
@@ -6817,14 +6812,12 @@ msgid "Code"
 msgstr "Код"
 
 #: pgadmin/ui/dlgType.xrc:43
-#, fuzzy
 msgid "Collatable"
-msgstr "Таблица Toast"
+msgstr ""
 
 #: pgadmin/schema/pgType.cpp:299
-#, fuzzy
 msgid "Collatable?"
-msgstr "Удалить таблицу?"
+msgstr ""
 
 # src/schema/pgRule.cpp:76 src/ui/frmQueryBuilder.cpp:217 standard input:10
 # standard
@@ -6850,34 +6843,28 @@ msgstr "Сопоставление"
 # standard
 # standard
 #: pgadmin/schema/pgCollation.cpp:79
-#, fuzzy
 msgid "Collation DDL"
-msgstr "Сопоставление"
+msgstr ""
 
 #: pgadmin/schema/pgCollation.cpp:75
-#, fuzzy
 msgid "Collation DDL report"
-msgstr "База данных DDL отчёт"
+msgstr ""
 
 #: pgadmin/schema/pgCollation.cpp:86
-#, fuzzy
 msgid "Collation dependencies"
-msgstr " зависимые"
+msgstr ""
 
 #: pgadmin/schema/pgCollation.cpp:82
-#, fuzzy
 msgid "Collation dependencies report"
-msgstr "Отчет зависимостей"
+msgstr ""
 
 #: pgadmin/schema/pgCollation.cpp:93
-#, fuzzy
 msgid "Collation dependents"
-msgstr " зависит"
+msgstr ""
 
 #: pgadmin/schema/pgCollation.cpp:89
-#, fuzzy
 msgid "Collation dependents report"
-msgstr "Отчет о зависимых"
+msgstr ""
 
 # src/ui/frmMain.cpp:306 standard input:1
 # src/ui/frmMain.cpp:306 standard input:1
@@ -6905,17 +6892,15 @@ msgstr "Отчет о зависимых"
 # standard
 # standard
 #: pgadmin/schema/pgCollation.cpp:72
-#, fuzzy
 msgid "Collation properties"
-msgstr "Свойства колонки"
+msgstr ""
 
 # src/ui/frmMain.cpp:130 src/ui/frmMain.cpp:184 standard input:2
 # standard
 # standard
 #: pgadmin/schema/pgCollation.cpp:68
-#, fuzzy
 msgid "Collation properties report"
-msgstr "&Отчет свойств"
+msgstr ""
 
 # src/schema/pgRule.cpp:76 src/ui/frmQueryBuilder.cpp:217 standard input:10
 # standard
@@ -6924,14 +6909,12 @@ msgstr "&Отчет свойств"
 #: pgadmin/schema/pgCollation.cpp:238
 #: pgadmin/schema/pgSchema.cpp:201
 #: pgadmin/schema/pgSchema.cpp:325
-#, fuzzy
 msgid "Collations"
-msgstr "Сопоставление"
+msgstr ""
 
 #: pgadmin/schema/pgCollation.cpp:218
-#, fuzzy
 msgid "Collations list report"
-msgstr "%s страница отчета"
+msgstr ""
 
 #: pgadmin/ui/dlgServer.xrc:14
 #: pgadmin/ui/dlgServer.xrc:10
@@ -8063,18 +8046,16 @@ msgid "Constraint name"
 msgstr "Имя ограничения"
 
 #: pgadmin/ui/dlgTrigger.xrc:8
-#, fuzzy
 msgid "Constraint trigger"
-msgstr "Имя ограничения"
+msgstr "Триггер-ограничение"
 
 # standard input:5
 # standard
 # standard
 # standard
 #: pgadmin/schema/pgTrigger.cpp:342
-#, fuzzy
 msgid "Constraint?"
-msgstr "Ограничение"
+msgstr "Ограничение?"
 
 # src/schema/pgObject.cpp:52 standard input:14
 # standard
@@ -8286,9 +8267,8 @@ msgstr "Копировать SQL из SQL-панели главной формы
 # standard
 # standard
 #: pgadmin/ui/dlgCollation.xrc:11
-#, fuzzy
 msgid "Copy collation"
-msgstr "Сопоставление"
+msgstr ""
 
 #: src/frm/frmEditGrid.cpp:162
 #: pgadmin/frm/frmEditGrid.cpp:163
@@ -8690,9 +8670,8 @@ msgid "Create a new Check constraint."
 msgstr "Создать ограничение-проверку."
 
 #: pgadmin/schema/pgCollation.cpp:232
-#, fuzzy
 msgid "Create a new Collation."
-msgstr "Создать колонку."
+msgstr ""
 
 #: src/schema/pgColumn.cpp:364
 #: src/schema/pgColumn.cpp:371
@@ -8729,9 +8708,8 @@ msgid "Create a new Exclusion constraint."
 msgstr "Создать исключающее ограничение."
 
 #: pgadmin/schema/pgExtension.cpp:219
-#, fuzzy
 msgid "Create a new Extension."
-msgstr "Создать преобразование."
+msgstr "Создать расширение."
 
 #: pgadmin/schema/gpExtTable.cpp:470
 #: pgadmin/schema/gpExtTable.cpp:557
@@ -8759,9 +8737,8 @@ msgid "Create a new FTS Template."
 msgstr "Создать FTS-шаблон."
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:342
-#, fuzzy
 msgid "Create a new Foreign Data Wrapper."
-msgstr "Создать внешний ключ."
+msgstr "Создать обёртку внешних данных."
 
 #: src/schema/pgForeignKey.cpp:269
 #: pgadmin/schema/pgForeignKey.cpp:269
@@ -8770,14 +8747,12 @@ msgid "Create a new Foreign Key constraint."
 msgstr "Создать внешний ключ."
 
 #: pgadmin/schema/pgForeignServer.cpp:345
-#, fuzzy
 msgid "Create a new Foreign Server."
-msgstr "Создать триггер."
+msgstr "Создать внешний сервер."
 
 #: pgadmin/schema/pgForeignTable.cpp:291
-#, fuzzy
 msgid "Create a new Foreign Table."
-msgstr "Создать таблицу."
+msgstr "Создать внешнюю таблицу."
 
 #: src/schema/pgFunction.cpp:424
 #: src/schema/pgFunction.cpp:450
@@ -9026,9 +9001,8 @@ msgid "Create a new Unique constraint."
 msgstr "Создать ограничение уникальности."
 
 #: pgadmin/schema/pgUserMapping.cpp:263
-#, fuzzy
 msgid "Create a new User Mapping."
-msgstr "Создать пользователя."
+msgstr ""
 
 #: src/schema/pgUser.cpp:297
 #: pgadmin/schema/pgUser.cpp:287
@@ -9193,7 +9167,6 @@ msgstr "Создание первичного соединения"
 #: pgadmin/frm/frmHint.cpp:76
 #: pgadmin/frm/frmHint.cpp:78
 #: pgadmin/frm/frmHint.cpp:83
-#, fuzzy
 msgid "Creation of index in referencing table suggested"
 msgstr "Создание индекса в зависимой таблице предложено"
 
@@ -9201,7 +9174,6 @@ msgstr "Создание индекса в зависимой таблице п�
 #: pgadmin/frm/frmHint.cpp:70
 #: pgadmin/frm/frmHint.cpp:72
 #: pgadmin/frm/frmHint.cpp:76
-#, fuzzy
 msgid "Creation of primary key suggested"
 msgstr "Создание первичного ключа предложено"
 
@@ -9309,9 +9281,8 @@ msgid "Custom foreground"
 msgstr "Другой цвет текста"
 
 #: pgadmin/frm/frmRestore.cpp:177
-#, fuzzy
 msgid "Custom or tar"
-msgstr "Другой цвет текста"
+msgstr "Пользовательский или tar"
 
 # standard
 msgid "Custom schedule"
@@ -10519,45 +10490,40 @@ msgstr "Описание"
 # standard
 # standard
 #: pgadmin/agent/dlgSchedule.cpp:828
-#, fuzzy
 msgid "Deselect all hours"
-msgstr "&Снять выделение"
+msgstr "Снять выделение со всех часов"
 
 # standard input:8
 # standard
 # standard
 # standard
 #: pgadmin/agent/dlgSchedule.cpp:853
-#, fuzzy
 msgid "Deselect all minutes"
-msgstr "&Снять выделение"
+msgstr "Снять выделение со всех минут"
 
 # standard input:8
 # standard
 # standard
 # standard
 #: pgadmin/agent/dlgSchedule.cpp:780
-#, fuzzy
 msgid "Deselect all month days"
-msgstr "&Снять выделение"
+msgstr "Снять выделение со всех дней"
 
 # standard input:8
 # standard
 # standard
 # standard
 #: pgadmin/agent/dlgSchedule.cpp:804
-#, fuzzy
 msgid "Deselect all months"
-msgstr "&Снять выделение"
+msgstr "&Снять выделение со всех месяцев"
 
 # standard input:8
 # standard
 # standard
 # standard
 #: pgadmin/agent/dlgSchedule.cpp:756
-#, fuzzy
 msgid "Deselect all week days"
-msgstr "&Снять выделение"
+msgstr "Снять выделение со всех дней недели"
 
 msgid "Design"
 msgstr "Дизайн"
@@ -10609,9 +10575,8 @@ msgstr "Направление"
 
 #: pgadmin/frm/frmBackup.cpp:246
 #: pgadmin/frm/frmRestore.cpp:179
-#, fuzzy
 msgid "Directory"
-msgstr "Направление"
+msgstr "Каталог"
 
 #: pgadmin/ui/frmBackup.xrc:26
 #: pgadmin/ui/frmRestore.xrc:19
@@ -11067,9 +11032,8 @@ msgstr "Не сохранять"
 # standard
 # standard
 #: pgadmin/ui/dlgForeignKey.xrc:10
-#, fuzzy
 msgid "Don't validate"
-msgstr "Не сохранять"
+msgstr "Не проверять"
 
 #: src/main/dlgClasses.cpp:491
 #: src/main/dlgClasses.cpp:638
@@ -11247,9 +11211,8 @@ msgid "Drop check constraint?"
 msgstr "Удалить ограничение-проверку"
 
 #: pgadmin/schema/pgCollation.cpp:62
-#, fuzzy
 msgid "Drop collation cascaded?"
-msgstr "Удалить функцию каскадно?"
+msgstr ""
 
 # standard input:6
 # standard input:8
@@ -11257,9 +11220,8 @@ msgstr "Удалить функцию каскадно?"
 # standard
 # standard
 #: pgadmin/schema/pgCollation.cpp:65
-#, fuzzy
 msgid "Drop collation?"
-msgstr "Удалить функцию?"
+msgstr ""
 
 #: pgadmin/schema/pgColumn.cpp:63
 msgid "Drop column cascaded?"
@@ -11294,24 +11256,20 @@ msgid "Drop domain?"
 msgstr "Удалить домен?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:394
-#, fuzzy
 msgid "Drop exclusion constraint cascaded?"
-msgstr "Удалить ограничение-проверку каскадно?"
+msgstr "Удалить исключающее ограничение каскадно?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:397
-#, fuzzy
 msgid "Drop exclusion constraint?"
-msgstr "Удалить ограничение-проверку"
+msgstr "Удалить исключающее ограничение?"
 
 #: pgadmin/schema/pgExtension.cpp:49
-#, fuzzy
 msgid "Drop extension cascaded?"
-msgstr "Удалить преобразование каскадно?"
+msgstr "Удалить расширение каскадно?"
 
 #: pgadmin/schema/pgExtension.cpp:52
-#, fuzzy
 msgid "Drop extension?"
-msgstr "Удалить преобразование?"
+msgstr "Удалить расширение?"
 
 #: pgadmin/schema/gpExtTable.cpp:55
 msgid "Drop external table cascaded?"
@@ -11326,14 +11284,12 @@ msgid "Drop external table?"
 msgstr "Удалить внешнюю таблицу?"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:51
-#, fuzzy
 msgid "Drop foreign data wrapper cascaded?"
-msgstr "Удалить внешний ключ каскадно?"
+msgstr "Удалить обёртку внешних данных каскадно?"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:54
-#, fuzzy
 msgid "Drop foreign data wrapper?"
-msgstr "Удалить внешний ключ?"
+msgstr "Удалить обёртку внешних данных?"
 
 #: pgadmin/schema/pgForeignKey.cpp:59
 msgid "Drop foreign key cascaded?"
@@ -11344,24 +11300,20 @@ msgid "Drop foreign key?"
 msgstr "Удалить внешний ключ?"
 
 #: pgadmin/schema/pgForeignServer.cpp:52
-#, fuzzy
 msgid "Drop foreign server cascaded?"
-msgstr "Удалить внешний ключ каскадно?"
+msgstr "Удалить внешний сервер каскадно?"
 
 #: pgadmin/schema/pgForeignServer.cpp:55
-#, fuzzy
 msgid "Drop foreign server?"
-msgstr "Удалить внешний ключ?"
+msgstr "Удалить внешний сервер?"
 
 #: pgadmin/schema/pgForeignTable.cpp:54
-#, fuzzy
 msgid "Drop foreign table cascaded?"
-msgstr "Удалить внешний ключ каскадно?"
+msgstr "Удалить внешнюю таблицу каскадно?"
 
 #: pgadmin/schema/pgForeignTable.cpp:57
-#, fuzzy
 msgid "Drop foreign table?"
-msgstr "Удалить внешний ключ?"
+msgstr "Удалить внешнюю таблицу?"
 
 #: pgadmin/schema/pgFunction.cpp:70
 msgid "Drop function cascaded?"
@@ -11429,9 +11381,8 @@ msgid "Drop language?"
 msgstr "Удалить язык?"
 
 #: pgadmin/schema/pgRole.cpp:68
-#, fuzzy
 msgid "Drop login role cascaded?"
-msgstr "Удалить login role каскадно?"
+msgstr "Удалить роль входа каскадно?"
 
 # standard
 #: pgadmin/schema/pgRole.cpp:71
@@ -11501,14 +11452,12 @@ msgid "Drop package?"
 msgstr "Удалить пакет?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:228
-#, fuzzy
 msgid "Drop primary key cascaded?"
-msgstr "Удалить внешний ключ каскадно?"
+msgstr "Удалить первичный ключ каскадно?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:231
-#, fuzzy
 msgid "Drop primary key?"
-msgstr "<первичный ключ отсутствует>"
+msgstr "Удалить первичный ключ?"
 
 #: pgadmin/schema/pgFunction.cpp:192
 msgid "Drop procedure cascaded?"
@@ -11645,32 +11594,28 @@ msgid "Drop type?"
 msgstr "Удалить тип?"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:311
-#, fuzzy
 msgid "Drop unique constraint cascaded?"
-msgstr "Удалить индексное ограничение каскадно?"
+msgstr "Удалить ограничение уникальности каскадно?"
 
 # standard input:5
 # standard
 # standard
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:314
-#, fuzzy
 msgid "Drop unique constraint?"
-msgstr "Удалить индексное ограничение?"
+msgstr "Удалить ограничение уникальности?"
 
 #: pgadmin/schema/pgUser.cpp:57
 msgid "Drop user cascaded?"
 msgstr "Удалить пользователя каскадно?"
 
 #: pgadmin/schema/pgUserMapping.cpp:52
-#, fuzzy
 msgid "Drop user mapping cascaded?"
-msgstr "Удалить пользователя каскадно?"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:55
-#, fuzzy
 msgid "Drop user mapping?"
-msgstr "Удалить пользователя?"
+msgstr ""
 
 #: pgadmin/schema/pgUser.cpp:60
 msgid "Drop user?"
@@ -12204,9 +12149,8 @@ msgstr "Введите имя базы данных на сервере для �
 # standard
 # standard
 #: pgadmin/schema/pgServer.cpp:1212
-#, fuzzy
 msgid "Enter the name of the restore point to add"
-msgstr "Введите имя хоста или IP адрес сервера, к которому следует подключиться."
+msgstr ""
 
 # standard input:15
 # standard
@@ -12474,7 +12418,6 @@ msgstr "Исключения"
 
 #: pgadmin/frm/frmReport.cpp:1365
 #: pgadmin/schema/pgIndexConstraint.cpp:496
-#, fuzzy
 msgid "Exclude"
 msgstr "Исключить"
 
@@ -12487,56 +12430,46 @@ msgid "Exclude Constraint"
 msgstr "Исключающее ограничение"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:411
-#, fuzzy
 msgid "Exclusion constraint DDL"
-msgstr "Новое исключающее ограничение..."
+msgstr "Определение исключающего ограничения"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:407
-#, fuzzy
 msgid "Exclusion constraint DDL report"
-msgstr "Новое исключающее ограничение..."
+msgstr "Отчёт определения исключающего ограничения"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:425
-#, fuzzy
 msgid "Exclusion constraint dependencies"
-msgstr "Новое исключающее ограничение..."
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:421
-#, fuzzy
 msgid "Exclusion constraint dependencies report"
-msgstr "%s отчет зависимостей - %s"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:432
-#, fuzzy
 msgid "Exclusion constraint dependents"
-msgstr "Новое исключающее ограничение..."
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:428
-#, fuzzy
 msgid "Exclusion constraint dependents report"
-msgstr "%s отчет о зависимых - %s"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:404
-#, fuzzy
 msgid "Exclusion constraint properties"
-msgstr "Свойства ограничения-проверки"
+msgstr "Свойства исключающего ограничения"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:400
-#, fuzzy
 msgid "Exclusion constraint properties report"
-msgstr "Свойства ограничения-проверки"
+msgstr ""
 
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:418
-#, fuzzy
 msgid "Exclusion constraint statistics"
-msgstr "Статистика индексного ограничения"
+msgstr "Статистика исключающего ограничения"
 
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:414
-#, fuzzy
 msgid "Exclusion constraint statistics report"
-msgstr "Статистика индексного ограничения"
+msgstr ""
 
 #: src/frm/frmQuery.cpp:206
 #: src/frm/frmQuery.cpp:250
@@ -12749,9 +12682,8 @@ msgstr "Построить план и проанализировать запр
 
 #: pgadmin/frm/frmQuery.cpp:302
 #: pgadmin/frm/frmQuery.cpp:306
-#, fuzzy
 msgid "Explain analyze query with (or without buffers)"
-msgstr "Подробный план выполнения с (или без буферов)"
+msgstr "Подробный план выполнения запроса с (или без буферов)"
 
 #: pgadmin/frm/frmQuery.cpp:301
 #: pgadmin/frm/frmQuery.cpp:305
@@ -12823,39 +12755,32 @@ msgid "Expression Error"
 msgstr "Ошибка в выражении"
 
 #: pgadmin/schema/pgExtension.cpp:219
-#, fuzzy
 msgid "Extension"
-msgstr "Выражение"
+msgstr "Расширение"
 
 #: pgadmin/schema/pgExtension.cpp:66
-#, fuzzy
 msgid "Extension DDL"
-msgstr "Преобразование DDL"
+msgstr "Определение расширения"
 
 #: pgadmin/schema/pgExtension.cpp:62
-#, fuzzy
 msgid "Extension DDL report"
-msgstr "База данных DDL отчёт"
+msgstr "Отчёт определения расширения"
 
 #: pgadmin/schema/pgExtension.cpp:73
-#, fuzzy
 msgid "Extension dependencies"
-msgstr "%s зависимости"
+msgstr ""
 
 #: pgadmin/schema/pgExtension.cpp:69
-#, fuzzy
 msgid "Extension dependencies report"
-msgstr "%s отчет зависимостей - %s"
+msgstr ""
 
 #: pgadmin/schema/pgExtension.cpp:80
-#, fuzzy
 msgid "Extension dependents"
-msgstr "%s зависит"
+msgstr ""
 
 #: pgadmin/schema/pgExtension.cpp:76
-#, fuzzy
 msgid "Extension dependents report"
-msgstr "%s отчет о зависимых - %s"
+msgstr ""
 
 # src/ui/frmMain.cpp:306 standard input:1
 # src/ui/frmMain.cpp:306 standard input:1
@@ -12883,17 +12808,15 @@ msgstr "%s отчет о зависимых - %s"
 # standard
 # standard
 #: pgadmin/schema/pgExtension.cpp:59
-#, fuzzy
 msgid "Extension properties"
-msgstr "Свойства преобразования"
+msgstr "Свойства расширения"
 
 # src/ui/frmMain.cpp:130 src/ui/frmMain.cpp:184 standard input:2
 # standard
 # standard
 #: pgadmin/schema/pgExtension.cpp:55
-#, fuzzy
 msgid "Extension properties report"
-msgstr "%s отчет свойств - %s"
+msgstr ""
 
 #: pgadmin/frm/frmOptions.cpp:342
 #: pgadmin/schema/pgDatabase.cpp:135
@@ -12901,14 +12824,12 @@ msgstr "%s отчет свойств - %s"
 #: pgadmin/schema/pgExtension.cpp:225
 #: pgadmin/utils/sysSettings.cpp:112
 #: pgadmin/utils/sysSettings.cpp:203
-#, fuzzy
 msgid "Extensions"
-msgstr "Размерности"
+msgstr "Расширения"
 
 #: pgadmin/schema/pgExtension.cpp:205
-#, fuzzy
 msgid "Extensions list report"
-msgstr "%s страница отчета"
+msgstr ""
 
 # standard input:6
 # standard
@@ -13972,9 +13893,8 @@ msgid "Foreground/Background"
 msgstr "Текст/фон"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:342
-#, fuzzy
 msgid "Foreign Data Wrapper"
-msgstr "Свойства вторичного ключа"
+msgstr "Обёртка внешних данных"
 
 #: pgadmin/frm/frmOptions.cpp:330
 #: pgadmin/schema/pgDatabase.cpp:137
@@ -13982,9 +13902,8 @@ msgstr "Свойства вторичного ключа"
 #: pgadmin/schema/pgForeignDataWrapper.cpp:348
 #: pgadmin/utils/sysSettings.cpp:87
 #: pgadmin/utils/sysSettings.cpp:198
-#, fuzzy
 msgid "Foreign Data Wrappers"
-msgstr "Свойства вторичного ключа"
+msgstr "Обёртки внешних данных"
 
 #: src/dlg/dlgTable.cpp:680
 #: src/dlg/dlgTable.cpp:682
@@ -14007,51 +13926,44 @@ msgstr "Проверка по вторичному ключу"
 
 #: pgadmin/schema/pgForeignServer.cpp:344
 #: pgadmin/ui/dlgForeignTable.xrc:8
-#, fuzzy
 msgid "Foreign Server"
-msgstr "Вторичный ключ"
+msgstr "Внешний сервер"
 
 #: pgadmin/frm/frmOptions.cpp:331
 #: pgadmin/schema/pgForeignDataWrapper.cpp:140
 #: pgadmin/schema/pgForeignServer.cpp:351
 #: pgadmin/utils/sysSettings.cpp:92
 #: pgadmin/utils/sysSettings.cpp:199
-#, fuzzy
 msgid "Foreign Servers"
-msgstr "Свойства вторичного ключа"
+msgstr "Внешние серверы"
 
 #: pgadmin/schema/pgForeignTable.cpp:291
-#, fuzzy
 msgid "Foreign Table"
-msgstr "Вторичный ключ"
+msgstr "Внешняя таблица"
 
 #: pgadmin/frm/frmOptions.cpp:333
 #: pgadmin/schema/pgForeignTable.cpp:297
 #: pgadmin/schema/pgSchema.cpp:331
 #: pgadmin/utils/sysSettings.cpp:102
 #: pgadmin/utils/sysSettings.cpp:201
-#, fuzzy
 msgid "Foreign Tables"
-msgstr "Вторичный ключ"
+msgstr "Внешние таблицы"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:68
-#, fuzzy
 msgid "Foreign data wrapper DDL"
-msgstr "Вторичный ключ DDL"
+msgstr "Определение обёртки внешних данных"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:64
-#, fuzzy
 msgid "Foreign data wrapper DDL report"
-msgstr "База данных DDL отчёт"
+msgstr "Отчёт определения обёртки внешних данных"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:82
 msgid "Foreign data wrapper dependencies"
 msgstr ""
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:78
-#, fuzzy
 msgid "Foreign data wrapper dependencies report"
-msgstr "Отчет зависимостей"
+msgstr ""
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:89
 msgid "Foreign data wrapper dependents"
@@ -14062,29 +13974,25 @@ msgid "Foreign data wrapper dependents report"
 msgstr ""
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:61
-#, fuzzy
 msgid "Foreign data wrapper properties"
-msgstr "Свойства вторичного ключа"
+msgstr "Свойства обёртки внешних данных"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:57
-#, fuzzy
 msgid "Foreign data wrapper properties report"
-msgstr "Свойства вторичного ключа"
+msgstr ""
 
 # standard input:1
 # standard
 # standard
 # standard
 #: pgadmin/schema/pgForeignDataWrapper.cpp:75
-#, fuzzy
 msgid "Foreign data wrapper statistics"
-msgstr "Статистика базы данных"
+msgstr "Статистика обёртки внешних данных"
 
 # standard
 #: pgadmin/schema/pgForeignDataWrapper.cpp:71
-#, fuzzy
 msgid "Foreign data wrapper statistics report"
-msgstr "Отчёт о статистике по таблице"
+msgstr ""
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:316
 msgid "Foreign data wrappers list report"
@@ -14147,114 +14055,94 @@ msgid "Foreign keys list report"
 msgstr ""
 
 #: pgadmin/schema/pgForeignServer.cpp:69
-#, fuzzy
 msgid "Foreign server DDL"
-msgstr "Вторичный ключ DDL"
+msgstr "Определение внешнего сервера"
 
 #: pgadmin/schema/pgForeignServer.cpp:65
-#, fuzzy
 msgid "Foreign server DDL report"
-msgstr "Вторичный ключ DDL"
+msgstr "Отчёт определения внешнего сервера"
 
 #: pgadmin/schema/pgForeignServer.cpp:83
-#, fuzzy
 msgid "Foreign server dependencies"
-msgstr "%s зависимости"
+msgstr ""
 
 #: pgadmin/schema/pgForeignServer.cpp:79
-#, fuzzy
 msgid "Foreign server dependencies report"
-msgstr "%s отчет зависимостей - %s"
+msgstr ""
 
 #: pgadmin/schema/pgForeignServer.cpp:90
-#, fuzzy
 msgid "Foreign server dependents"
-msgstr "%s зависит"
+msgstr ""
 
 #: pgadmin/schema/pgForeignServer.cpp:86
-#, fuzzy
 msgid "Foreign server dependents report"
-msgstr "%s отчет о зависимых - %s"
+msgstr ""
 
 #: pgadmin/schema/pgForeignServer.cpp:62
-#, fuzzy
 msgid "Foreign server properties"
-msgstr "Свойства вторичного ключа"
+msgstr "Свойства внешнего сервера"
 
 #: pgadmin/schema/pgForeignServer.cpp:58
-#, fuzzy
 msgid "Foreign server properties report"
-msgstr "Свойства вторичного ключа"
+msgstr ""
 
 # standard
 #: pgadmin/schema/pgForeignServer.cpp:76
-#, fuzzy
 msgid "Foreign server statistics"
-msgstr "Статистика сервера"
+msgstr "Статистика внешнего сервера"
 
 # standard
 #: pgadmin/schema/pgForeignServer.cpp:72
-#, fuzzy
 msgid "Foreign server statistics report"
-msgstr "Отчёт о статистике по таблице"
+msgstr ""
 
 # standard input:20
 # standard
 # standard
 # standard
 #: pgadmin/schema/pgForeignServer.cpp:282
-#, fuzzy
 msgid "Foreign servers list report"
-msgstr "Отчет списка объектов"
+msgstr ""
 
 #: pgadmin/schema/pgForeignTable.cpp:71
-#, fuzzy
 msgid "Foreign table DDL"
-msgstr "Вторичный ключ DDL"
+msgstr "Определение внешней таблицы"
 
 #: pgadmin/schema/pgForeignTable.cpp:67
-#, fuzzy
 msgid "Foreign table DDL report"
-msgstr "База данных DDL отчёт"
+msgstr "Отчёт определения внешней таблицы"
 
 #: pgadmin/schema/pgForeignTable.cpp:78
-#, fuzzy
 msgid "Foreign table dependencies"
-msgstr "зависимости"
+msgstr ""
 
 #: pgadmin/schema/pgForeignTable.cpp:74
-#, fuzzy
 msgid "Foreign table dependencies report"
-msgstr "Отчет зависимостей"
+msgstr ""
 
 #: pgadmin/schema/pgForeignTable.cpp:85
-#, fuzzy
 msgid "Foreign table dependents"
-msgstr "зависимости"
+msgstr ""
 
 #: pgadmin/schema/pgForeignTable.cpp:81
-#, fuzzy
 msgid "Foreign table dependents report"
-msgstr "Отчет о зависимых"
+msgstr ""
 
 #: pgadmin/schema/pgForeignTable.cpp:64
-#, fuzzy
 msgid "Foreign table properties"
-msgstr "Свойства вторичного ключа"
+msgstr "Свойства внешней таблицы"
 
 #: pgadmin/schema/pgForeignTable.cpp:60
-#, fuzzy
 msgid "Foreign table properties report"
-msgstr "Свойства вторичного ключа"
+msgstr ""
 
 # standard input:20
 # standard
 # standard
 # standard
 #: pgadmin/schema/pgForeignTable.cpp:233
-#, fuzzy
 msgid "Foreign tables list report"
-msgstr "Отчет списка объектов"
+msgstr ""
 
 # standard
 #: standard input:708
@@ -15388,9 +15276,8 @@ msgstr "Хост"
 # standard
 #: pgadmin/schema/pgServer.cpp:1003
 #: pgadmin/ui/dlgServer.xrc:20
-#, fuzzy
 msgid "Host Address"
-msgstr "Хост/IP адрес"
+msgstr "Адрес хоста"
 
 #: src/agent/pgaJob.cpp:88
 #: standard input:242
@@ -16716,9 +16603,8 @@ msgid "Last Vacuum"
 msgstr "Последняя очистка"
 
 #: pgadmin/schema/pgServer.cpp:1081
-#, fuzzy
 msgid "Last XACT replay timestamp"
-msgstr "Время последнего подтверждения"
+msgstr ""
 
 #: pgadmin/schema/pgServer.cpp:987
 #: pgadmin/schema/pgServer.cpp:1076
@@ -16819,9 +16705,8 @@ msgstr "Последний запуск"
 # standard
 #: pgadmin/schema/pgDatabase.cpp:305
 #: pgadmin/schema/pgDatabase.cpp:1110
-#, fuzzy
 msgid "Last statistics reset"
-msgstr "Отчёт о статистике по таблице"
+msgstr "Последний сброс статистики"
 
 # standard input:11
 # standard
@@ -17046,9 +16931,9 @@ msgid "Ln %d Col %d Ch %d"
 msgstr "Строка %d Колонка %d Символ %d"
 
 #: pgadmin/frm/frmQuery.cpp:1641
-#, fuzzy, c-format
+#, c-format
 msgid "Ln %d, Col %d, Ch %d"
-msgstr "Строка %d Колонка %d Символ %d"
+msgstr "Строка %d, Колонка %d, Символ %d"
 
 #: src/dlg/dlgForeignKey.cpp:303
 #: pgadmin/dlg/dlgForeignKey.cpp:303
@@ -17111,9 +16996,8 @@ msgid "Local node ID"
 msgstr "ID локального узла"
 
 #: pgadmin/ui/dlgCollation.xrc:8
-#, fuzzy
 msgid "Locale"
-msgstr "Локальный"
+msgstr "Локаль"
 
 # src/schema/pgRule.cpp:78 standard input:12
 # standard
@@ -18021,9 +17905,8 @@ msgstr "NO ACTION"
 # standard
 # standard
 #: pgadmin/ui/dlgForeignTable.xrc:14
-#, fuzzy
 msgid "NOT NULL"
-msgstr "SET NULL"
+msgstr "NOT NULL"
 
 # standard
 # standard
@@ -18479,9 +18362,8 @@ msgid "New Check..."
 msgstr "Новая проверка..."
 
 #: pgadmin/schema/pgCollation.cpp:232
-#, fuzzy
 msgid "New Collation..."
-msgstr "Новая колонка..."
+msgstr ""
 
 #: src/schema/pgColumn.cpp:364
 msgid "New Column"
@@ -18532,9 +18414,8 @@ msgid "New Exclusion Constraint..."
 msgstr "Новое исключающее ограничение..."
 
 #: pgadmin/schema/pgExtension.cpp:219
-#, fuzzy
 msgid "New Extension..."
-msgstr "Новое преобразование..."
+msgstr "Новое расширение..."
 
 #: pgadmin/schema/gpExtTable.cpp:470
 #: pgadmin/schema/gpExtTable.cpp:557
@@ -18562,9 +18443,8 @@ msgid "New FTS Template..."
 msgstr "Новый FTS-шаблон..."
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:342
-#, fuzzy
 msgid "New Foreign Data Wrapper..."
-msgstr "Новый вторичный ключ..."
+msgstr "Новый обработчик внешних данных..."
 
 #: src/schema/pgForeignKey.cpp:269
 msgid "New Foreign Key"
@@ -18577,14 +18457,12 @@ msgid "New Foreign Key..."
 msgstr "Новый вторичный ключ..."
 
 #: pgadmin/schema/pgForeignServer.cpp:344
-#, fuzzy
 msgid "New Foreign Server..."
-msgstr "Новый вторичный ключ..."
+msgstr "Новый внешний сервер..."
 
 #: pgadmin/schema/pgForeignTable.cpp:291
-#, fuzzy
 msgid "New Foreign Table..."
-msgstr "Новый вторичный ключ..."
+msgstr "Новый внешняя таблицы..."
 
 #: src/schema/pgFunction.cpp:424
 msgid "New Function"
@@ -18934,9 +18812,8 @@ msgid "New User"
 msgstr "Новый пользователь"
 
 #: pgadmin/schema/pgUserMapping.cpp:262
-#, fuzzy
 msgid "New User Mapping..."
-msgstr "Новый пользователь..."
+msgstr ""
 
 #: src/schema/pgUser.cpp:297
 #: pgadmin/schema/pgUser.cpp:287
@@ -21204,7 +21081,7 @@ msgstr ""
 #: pgadmin/frm/frmBackup.cpp:244
 #, fuzzy
 msgid "Plain"
-msgstr "Построить план выполнения"
+msgstr "Простой"
 
 msgid "Please choose user language:"
 msgstr "Пожалуйста, выберите язык пользователя:"
@@ -21471,9 +21348,8 @@ msgid "Please specify FK index name."
 msgstr "Пожалуйста, укажите имя индекса ВК."
 
 #: pgadmin/dlg/dlgForeignTable.cpp:239
-#, fuzzy
 msgid "Please specify a foreign server."
-msgstr "Пожалуйста, укажите процедуру."
+msgstr "Пожалуйста, укажите внешний сервер."
 
 #: pgadmin/dlg/dlgCollation.cpp:130
 msgid "Please specify a locale, or LC_COLLATE and LC_CTYPE, or a collation"
@@ -21824,9 +21700,8 @@ msgid "Please specify user name"
 msgstr "Пожалуйста, укажите имя пользователя"
 
 #: pgadmin/dlg/dlgUserMapping.cpp:139
-#, fuzzy
 msgid "Please specify user."
-msgstr "Пожалуйста, укажите имя пользователя"
+msgstr "Пожалуйста, укажите пользователя."
 
 #: src/dlg/dlgColumn.cpp:460
 #: src/dlg/dlgDomain.cpp:140
@@ -22014,59 +21889,49 @@ msgid "Primary key"
 msgstr "Первичный ключ"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:245
-#, fuzzy
 msgid "Primary key DDL"
-msgstr "Первичный ключ"
+msgstr "Определение первичного ключа"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:241
-#, fuzzy
 msgid "Primary key DDL report"
-msgstr "Первичный ключ"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:259
-#, fuzzy
 msgid "Primary key dependencies"
-msgstr " зависимые"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:255
-#, fuzzy
 msgid "Primary key dependencies report"
-msgstr "Отчет зависимостей"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:266
-#, fuzzy
 msgid "Primary key dependents"
-msgstr " зависит"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:262
-#, fuzzy
 msgid "Primary key dependents report"
-msgstr "Отчет о зависимых"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:238
-#, fuzzy
 msgid "Primary key properties"
-msgstr "Свойства вторичного ключа"
+msgstr "Свойства первичного ключа"
 
 # src/ui/frmMain.cpp:130 src/ui/frmMain.cpp:184 standard input:2
 # standard
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:234
-#, fuzzy
 msgid "Primary key properties report"
-msgstr "&Отчет свойств"
+msgstr ""
 
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:252
-#, fuzzy
 msgid "Primary key statistics"
-msgstr "Статистика таблицы"
+msgstr "Статистика первичного ключа"
 
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:248
-#, fuzzy
 msgid "Primary key statistics report"
-msgstr "Отчёт о статистике по таблице"
+msgstr ""
 
 #: src/schema/pgColumn.cpp:213
 #: src/frm/frmReport.cpp:1294
@@ -22149,9 +22014,8 @@ msgid "Privileges for column"
 msgstr "Привилегии для колонки"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:382
-#, fuzzy
 msgid "Privileges for exclusion constraint"
-msgstr "Привилегии для ограничения-проверки"
+msgstr "Привилегии для исключающего ограничения"
 
 #: pgadmin/schema/gpExtTable.cpp:540
 msgid "Privileges for external tables"
@@ -22182,9 +22046,8 @@ msgid "Privileges for packages"
 msgstr "Привилегии для пакета"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:216
-#, fuzzy
 msgid "Privileges for primary key"
-msgstr "Привилегии для внешнего ключа"
+msgstr "Привилегии для первичного ключа"
 
 #: pgadmin/schema/pgFunction.cpp:1192
 msgid "Privileges for procedures"
@@ -22223,9 +22086,8 @@ msgid "Privileges for trigger functions"
 msgstr "Привилегии для триггерных функций"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:299
-#, fuzzy
 msgid "Privileges for unique constraint"
-msgstr "Привилегии для индексного ограничения"
+msgstr "Привилегии для ограничения уникальности"
 
 #: pgadmin/schema/pgUser.cpp:45
 msgid "Privileges for user"
@@ -22730,7 +22592,6 @@ msgid "Query Tool"
 msgstr "Инструмент запросов"
 
 #: pgadmin/ui/frmOptions.xrc:53
-#, fuzzy
 msgid "Query Tool files"
 msgstr "Инструмент запросов"
 
@@ -22827,16 +22688,16 @@ msgstr[2] "Будет возвращён результат запроса: %d �
 #: src/base/pgSetBase.cpp:467
 #: src/base/pgSetBase.cpp:529
 #: pgadmin/db/pgQueryThread.cpp:141
-#, fuzzy, c-format
+#, c-format
 msgid "Query result with %d rows discarded.\n"
-msgstr "Результат запроса с отброшенным числом строк: %d.\n"
+msgstr ""
 
 #: src/base/pgSetBase.cpp:459
 #: src/base/pgSetBase.cpp:523
 #: pgadmin/db/pgQueryThread.cpp:135
-#, fuzzy, c-format
+#, c-format
 msgid "Query result with %d rows will be returned.\n"
-msgstr "Результат запроса с произведённым числом строк: %d.\n"
+msgstr ""
 
 #: src/frm/frmQuery.cpp:1255
 #: pgadmin/frm/frmQuery.cpp:1467
@@ -23182,9 +23043,8 @@ msgid "Referenced"
 msgstr "Ссылается"
 
 #: src/frm/frmMain.cpp:288
-#, fuzzy
 msgid "Referenced by"
-msgstr "Чем ссылается"
+msgstr ""
 
 # src/schema/pgForeignKey.cpp:141 standard input:3
 # standard
@@ -23387,14 +23247,12 @@ msgstr "Обновление ограничений-проверок"
 # standard
 # standard
 #: pgadmin/schema/pgCollation.cpp:50
-#, fuzzy
 msgid "Refreshing collation"
-msgstr "Обновление функции"
+msgstr ""
 
 #: pgadmin/schema/pgCollation.cpp:215
-#, fuzzy
 msgid "Refreshing collations"
-msgstr "Обновление функций"
+msgstr ""
 
 # standard
 # standard
@@ -23444,19 +23302,16 @@ msgid "Refreshing domains"
 msgstr "Обновление доменов"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:378
-#, fuzzy
 msgid "Refreshing exclusion constraint"
-msgstr "Обновление ограничения-проверки"
+msgstr "Обновление исключающего ограничения"
 
 #: pgadmin/schema/pgExtension.cpp:37
-#, fuzzy
 msgid "Refreshing extension"
-msgstr "Обновление индексов"
+msgstr "Обновление расширения"
 
 #: pgadmin/schema/pgExtension.cpp:202
-#, fuzzy
 msgid "Refreshing extensions"
-msgstr "Обновление преобразований"
+msgstr "Обновление расширений"
 
 #: pgadmin/schema/gpExtTable.cpp:43
 msgid "Refreshing external table"
@@ -23467,14 +23322,12 @@ msgid "Refreshing external tables"
 msgstr "Обновлений внешних таблиц"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:39
-#, fuzzy
 msgid "Refreshing foreign data wrapper"
-msgstr "Обновление внешнего ключа"
+msgstr "Обновление обёртки внешних данных"
 
 #: pgadmin/schema/pgForeignDataWrapper.cpp:313
-#, fuzzy
 msgid "Refreshing foreign data wrappers"
-msgstr "Обновление внешних ключей"
+msgstr "Обновление обёрток внешних данных"
 
 #: pgadmin/schema/pgForeignKey.cpp:43
 msgid "Refreshing foreign key"
@@ -23485,24 +23338,20 @@ msgid "Refreshing foreign keys"
 msgstr "Обновление внешних ключей"
 
 #: pgadmin/schema/pgForeignServer.cpp:40
-#, fuzzy
 msgid "Refreshing foreign server"
-msgstr "Обновление внешнего ключа"
+msgstr "Обновление внешнего сервера"
 
 #: pgadmin/schema/pgForeignServer.cpp:279
-#, fuzzy
 msgid "Refreshing foreign servers"
-msgstr "Обновление внешних ключей"
+msgstr "Обновление внешних серверов"
 
 #: pgadmin/schema/pgForeignTable.cpp:42
-#, fuzzy
 msgid "Refreshing foreign table"
-msgstr "Обновление внешнего ключа"
+msgstr "Обновление внешней таблицы"
 
 #: pgadmin/schema/pgForeignTable.cpp:230
-#, fuzzy
 msgid "Refreshing foreign tables"
-msgstr "Обновление внешних ключей"
+msgstr "Обновление внешних таблиц"
 
 # standard
 # standard
@@ -23628,9 +23477,8 @@ msgid "Refreshing pgAgent steps"
 msgstr "Обновление шагов pgAgent"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:212
-#, fuzzy
 msgid "Refreshing primary key"
-msgstr "Обновление внешнего ключа"
+msgstr "Обновление первичного ключа"
 
 #: pgadmin/schema/pgFunction.cpp:180
 msgid "Refreshing procedure"
@@ -23744,9 +23592,8 @@ msgid "Refreshing types"
 msgstr "Обновление типов"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:295
-#, fuzzy
 msgid "Refreshing unique constraint"
-msgstr "Обновление индексного ограничения"
+msgstr "Обновление ограничения уникальности"
 
 #: pgadmin/schema/pgObject.cpp:319
 msgid "Refreshing unknown object of type"
@@ -23757,14 +23604,12 @@ msgid "Refreshing user"
 msgstr "Обновление пользователя"
 
 #: pgadmin/schema/pgUserMapping.cpp:40
-#, fuzzy
 msgid "Refreshing user mapping"
-msgstr "Обновление пользователя"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:245
-#, fuzzy
 msgid "Refreshing user mappings"
-msgstr "Обновление пользователей"
+msgstr ""
 
 #: pgadmin/schema/pgUser.cpp:318
 msgid "Refreshing users"
@@ -23823,9 +23668,8 @@ msgstr "Перезагрузить"
 #: pgadmin/frm/frmConfig.cpp:123
 #: pgadmin/frm/frmConfig.cpp:124
 #: pgadmin/frm/frmConfig.cpp:125
-#, fuzzy
 msgid "Reload Server to apply configuration changes."
-msgstr "Перегрузить сервер для принятия измененных настроек."
+msgstr "Перегрузить сервер для принятия изменения настроек."
 
 #: pgadmin/schema/pgServer.cpp:1695
 #: pgadmin/schema/pgServer.cpp:1869
@@ -23863,9 +23707,8 @@ msgid "Reloading configuration"
 msgstr "Перегрузка конфигурации"
 
 #: pgadmin/schema/pgExtension.cpp:126
-#, fuzzy
 msgid "Relocatable?"
-msgstr "Удалить таблицу?"
+msgstr ""
 
 # src/ui/dlgProperty.cpp:886 standard input:26
 # src/ui/dlgProperty.cpp:886 standard input:11
@@ -24188,9 +24031,8 @@ msgstr "Заменить на:"
 
 #: pgadmin/schema/pgServer.cpp:1083
 #: pgadmin/schema/pgServer.cpp:1085
-#, fuzzy
 msgid "Replay paused"
-msgstr "Реплицировано"
+msgstr "Репликация приостановлена"
 
 #: src/schema/pgTable.cpp:440
 #: src/schema/pgTable.cpp:443
@@ -24225,9 +24067,8 @@ msgid "Replication Sets"
 msgstr "Набор репликации"
 
 #: pgadmin/schema/pgRole.cpp:400
-#, fuzzy
 msgid "Replication?"
-msgstr "Репликация"
+msgstr "Репликация?"
 
 #: standard input:919
 #: pgadmin/ui/frmReport.xrc:4
@@ -24494,9 +24335,8 @@ msgid "Restore environment?"
 msgstr "Восстанавливать окружение?"
 
 #: pgadmin/schema/pgServer.cpp:1212
-#, fuzzy
 msgid "Restore point name"
-msgstr "Имя ограничения"
+msgstr "Имя точки восстановления"
 
 #: src/frm/frmEditGrid.cpp:179
 #: src/frm/frmMain.cpp:256
@@ -25502,9 +25342,8 @@ msgid "Running PID"
 msgstr "Выполняется PID"
 
 #: pgadmin/frm/frmHint.cpp:97
-#, fuzzy
 msgid "Running VACUUM FULL not recommended"
-msgstr "Рекомендуется запустить VACUUM"
+msgstr "Не рекомендуется запускать VACUUM FULL"
 
 #: src/frm/frmHint.cpp:82
 #: pgadmin/frm/frmHint.cpp:82
@@ -26243,14 +26082,12 @@ msgstr "Выделите колонку для добавки к списку с
 # standard
 # standard
 #: pgadmin/agent/dlgSchedule.cpp:823
-#, fuzzy
 msgid "Select all hours"
-msgstr "В&ыделить всё"
+msgstr "Выделить все часы"
 
 #: pgadmin/agent/dlgSchedule.cpp:848
-#, fuzzy
 msgid "Select all minutes"
-msgstr "Выбрать файл журнала"
+msgstr "Выделить все минуты"
 
 #: pgadmin/agent/dlgSchedule.cpp:775
 msgid "Select all month days"
@@ -26261,9 +26098,8 @@ msgstr ""
 # standard
 # standard
 #: pgadmin/agent/dlgSchedule.cpp:799
-#, fuzzy
 msgid "Select all months"
-msgstr "Выделить колонку"
+msgstr "Выделить все месяцы"
 
 #: pgadmin/agent/dlgSchedule.cpp:751
 msgid "Select all week days"
@@ -26396,9 +26232,8 @@ msgid "Select stylesheet filename"
 msgstr "Имя стиль для файла"
 
 #: pgadmin/frm/frmRestore.cpp:224
-#, fuzzy
 msgid "Select the backup directory"
-msgstr "Выбрать имя файла для бэкапа"
+msgstr "Выбрать директорию для резервной копии"
 
 # standard
 #: standard input:947
@@ -27657,9 +27492,8 @@ msgstr "Тип состояния"
 # standard
 # standard
 #: pgadmin/ui/dlgRule.xrc:14
-#, fuzzy
 msgid "Statements"
-msgstr "Сегмент"
+msgstr "Выражения"
 
 #: src/schema/pgObject.cpp:802
 #: src/schema/pgSequence.cpp:120
@@ -28773,9 +28607,8 @@ msgid "Tablespace DDL"
 msgstr "Табличное пространство DDL"
 
 #: pgadmin/schema/pgTablespace.cpp:66
-#, fuzzy
 msgid "Tablespace DDL report"
-msgstr "Размер Tablespace"
+msgstr ""
 
 #: src/schema/pgTablespace.cpp:144
 #: pgadmin/schema/pgTablespace.cpp:138
@@ -28789,23 +28622,20 @@ msgstr "Размер табл. пространства"
 # standard
 #: pgadmin/schema/pgDatabase.cpp:306
 #: pgadmin/schema/pgDatabase.cpp:1111
-#, fuzzy
 msgid "Tablespace conflicts"
-msgstr "Табличные пространства"
+msgstr ""
 
 #: pgadmin/schema/pgTablespace.cpp:84
-#, fuzzy
 msgid "Tablespace dependencies"
-msgstr "зависимости"
+msgstr ""
 
 #: pgadmin/schema/pgTablespace.cpp:80
 msgid "Tablespace dependencies report"
 msgstr ""
 
 #: pgadmin/schema/pgTablespace.cpp:91
-#, fuzzy
 msgid "Tablespace dependents"
-msgstr "зависимости"
+msgstr ""
 
 #: pgadmin/schema/pgTablespace.cpp:87
 msgid "Tablespace dependents report"
@@ -28866,9 +28696,8 @@ msgstr "Табличные пространства"
 # standard
 # standard
 #: pgadmin/schema/pgTablespace.cpp:357
-#, fuzzy
 msgid "Tablespaces list report"
-msgstr "Отчет списка объектов"
+msgstr ""
 
 # standard
 #: pgadmin/schema/pgTablespace.cpp:354
@@ -28881,9 +28710,8 @@ msgid "Tablespaces statistics report"
 msgstr ""
 
 #: pgadmin/frm/frmBackup.cpp:243
-#, fuzzy
 msgid "Tar"
-msgstr "Tab"
+msgstr "Tar"
 
 # standard input:5
 # standard
@@ -29144,9 +28972,9 @@ msgid "The file \"%s\" could not be opened because it contains characters that c
 msgstr "Файл \"%s\" не удалось открыть из-за недопустимых символов."
 
 #: pgadmin/utils/utffile.cpp:82
-#, fuzzy, c-format
+#, c-format
 msgid "The file '%s' could not be opened because it contains characters that could not be interpreted."
-msgstr "Файл \"%s\" не удалось открыть из-за недопустимых символов."
+msgstr "Файл '%s' не удалось открыть так как он содержит символы которые не могут быть интерпретированы."
 
 #: src/frm/frmReport.cpp:282
 #: pgadmin/frm/frmReport.cpp:287
@@ -29569,9 +29397,8 @@ msgstr "Выпускается под лицензией PostgreSQL."
 # standard
 # standard
 #: pgadmin/frm/events.cpp:1017
-#, fuzzy
 msgid "This tab cannot be closed."
-msgstr "Нельзя удалить начальную базу."
+msgstr "Эта вкладка не может быть закрыта."
 
 #: src/frm/frmEditGrid.cpp:2400
 #: pgadmin/frm/frmEditGrid.cpp:2506
@@ -30745,60 +30572,50 @@ msgstr "Уникальный"
 # standard
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:328
-#, fuzzy
 msgid "Unique constraint DDL"
-msgstr "Индексное ограничение DDL"
+msgstr "Определение ограничения уникальности"
 
 # standard input:5
 # standard
 # standard
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:324
-#, fuzzy
 msgid "Unique constraint DDL report"
-msgstr "Индексное ограничение DDL"
+msgstr "Отчет определения ограничения уникальности"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:342
-#, fuzzy
 msgid "Unique constraint dependencies"
-msgstr "Свойства ограничения-проверки"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:338
-#, fuzzy
 msgid "Unique constraint dependencies report"
-msgstr "%s отчет зависимостей - %s"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:349
-#, fuzzy
 msgid "Unique constraint dependents"
-msgstr "Новое ограничение UNIQUE"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:345
-#, fuzzy
 msgid "Unique constraint dependents report"
-msgstr "%s отчет о зависимых - %s"
+msgstr ""
 
 #: pgadmin/schema/pgIndexConstraint.cpp:321
-#, fuzzy
 msgid "Unique constraint properties"
-msgstr "Свойства ограничения-проверки"
+msgstr "Свойства ограничения уникальности"
 
 #: pgadmin/schema/pgIndexConstraint.cpp:317
-#, fuzzy
 msgid "Unique constraint properties report"
-msgstr "Свойства ограничения-проверки"
+msgstr ""
 
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:335
-#, fuzzy
 msgid "Unique constraint statistics"
-msgstr "Статистика индексного ограничения"
+msgstr "Статистика ограничения уникальности"
 
 # standard
 #: pgadmin/schema/pgIndexConstraint.cpp:331
-#, fuzzy
 msgid "Unique constraint statistics report"
-msgstr "Статистика индексного ограничения"
+msgstr ""
 
 #: src/schema/pgIndex.cpp:205
 #: src/schema/pgIndexConstraint.cpp:102
@@ -31266,9 +31083,8 @@ msgstr "ID пользователя"
 # standard
 # standard
 #: pgadmin/schema/pgUserMapping.cpp:262
-#, fuzzy
 msgid "User Mapping"
-msgstr "Язык"
+msgstr ""
 
 # src/ui/frmMain.cpp:306 standard input:1
 # src/ui/frmMain.cpp:306 standard input:1
@@ -31300,9 +31116,8 @@ msgstr "Язык"
 #: pgadmin/schema/pgUserMapping.cpp:269
 #: pgadmin/utils/sysSettings.cpp:97
 #: pgadmin/utils/sysSettings.cpp:200
-#, fuzzy
 msgid "User Mappings"
-msgstr "Свойства пользователя"
+msgstr ""
 
 # src/schema/pgServer.cpp:283 standard input:2
 # src/schema/pgServer.cpp:283 standard input:2
@@ -31375,34 +31190,28 @@ msgstr "Язык"
 # standard
 # standard
 #: pgadmin/schema/pgUserMapping.cpp:69
-#, fuzzy
 msgid "User mapping DDL"
-msgstr "Пользователь DDL"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:65
-#, fuzzy
 msgid "User mapping DDL report"
-msgstr "База данных DDL отчёт"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:83
-#, fuzzy
 msgid "User mapping dependencies"
-msgstr "%s зависимости"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:79
-#, fuzzy
 msgid "User mapping dependencies report"
-msgstr "%s отчет зависимостей - %s"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:90
-#, fuzzy
 msgid "User mapping dependents"
-msgstr "%s зависит"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:86
-#, fuzzy
 msgid "User mapping dependents report"
-msgstr "%s отчет о зависимых - %s"
+msgstr ""
 
 # src/ui/frmMain.cpp:306 standard input:1
 # src/ui/frmMain.cpp:306 standard input:1
@@ -31430,34 +31239,29 @@ msgstr "%s отчет о зависимых - %s"
 # standard
 # standard
 #: pgadmin/schema/pgUserMapping.cpp:62
-#, fuzzy
 msgid "User mapping properties"
-msgstr "Свойства пользователя"
+msgstr ""
 
 # src/ui/frmMain.cpp:130 src/ui/frmMain.cpp:184 standard input:2
 # standard
 # standard
 #: pgadmin/schema/pgUserMapping.cpp:58
-#, fuzzy
 msgid "User mapping properties report"
-msgstr "%s отчет свойств - %s"
+msgstr ""
 
 # standard
 #: pgadmin/schema/pgUserMapping.cpp:76
-#, fuzzy
 msgid "User mapping statistics"
-msgstr "Сбросить статистику использования функций"
+msgstr ""
 
 # standard
 #: pgadmin/schema/pgUserMapping.cpp:72
-#, fuzzy
 msgid "User mapping statistics report"
-msgstr "Отчёт о статистике по таблице"
+msgstr ""
 
 #: pgadmin/schema/pgUserMapping.cpp:248
-#, fuzzy
 msgid "User mappings list report"
-msgstr "%s страница отчета"
+msgstr ""
 
 # src/ui/frmMain.cpp:306 standard input:1
 # src/ui/frmMain.cpp:306 standard input:1
@@ -31623,9 +31427,8 @@ msgstr "VACUUM"
 # standard
 # standard
 #: pgadmin/frm/frmHint.cpp:98
-#, fuzzy
 msgid "VACUUM FULL"
-msgstr "VACUUM"
+msgstr "VACUUM FULL"
 
 #: standard input:588
 #: input:645
@@ -31720,9 +31523,8 @@ msgstr "Настройка Vacumm"
 # standard
 # standard
 #: pgadmin/schema/pgForeignKey.cpp:249
-#, fuzzy
 msgid "Valid?"
-msgstr "Проверить"
+msgstr ""
 
 # src/schema/pgLanguage.cpp:67 standard input:7
 # standard
@@ -31735,9 +31537,8 @@ msgid "Validate"
 msgstr "Проверить"
 
 #: pgadmin/schema/pgForeignKey.cpp:401
-#, fuzzy
 msgid "Validate foreign key"
-msgstr "Системный вторичный ключ?"
+msgstr "Проверить внешний ключ"
 
 #: pgadmin/schema/pgForeignKey.cpp:401
 #, fuzzy
@@ -33103,7 +32904,7 @@ msgstr "владелец"
 
 #: pgadmin/schema/pgServer.cpp:1083
 msgid "paused"
-msgstr ""
+msgstr "приостановлено"
 
 #: standard input:759
 #: input:816
@@ -33427,9 +33228,9 @@ msgstr "выполняется"
 # standard
 #: pgadmin/db/pgConn.cpp:605
 #: pgadmin/schema/pgServer.cpp:816
-#, fuzzy, c-format
+#, c-format
 msgid "service %s"
-msgstr "Служба"
+msgstr "служба %s"
 
 #: src/dlg/dlgMainConfig.cpp:68
 #: pgadmin/dlg/dlgMainConfig.cpp:68
