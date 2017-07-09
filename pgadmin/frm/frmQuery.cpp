@@ -1781,7 +1781,13 @@ void frmQuery::OnChangeStc(wxStyledTextEvent &event)
 
 void frmQuery::OnPositionStc(wxStyledTextEvent &event)
 {
-	int selFrom, selTo, selCount;
+	CallAfter(&frmQuery::DoUpdatePositionStc, event);
+}
+
+
+void frmQuery::DoUpdatePositionStc(const wxStyledTextEvent &event)
+{
+    int selFrom, selTo, selCount;
 	sqlQuery->GetSelection(&selFrom, &selTo);
 	selCount = selTo - selFrom;
 
